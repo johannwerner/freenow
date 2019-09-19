@@ -3,14 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		56789DE5663A892EBBB59763 /* Pods_FreeNowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C15E09FB3459A01BE925C6 /* Pods_FreeNowTests.framework */; };
 		932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C2823336F6900DDC791 /* AppDelegate.swift */; };
-		932E8C2B23336F6900DDC791 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C2A23336F6900DDC791 /* SceneDelegate.swift */; };
-		932E8C2D23336F6900DDC791 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C2C23336F6900DDC791 /* ContentView.swift */; };
 		932E8C2F23336F6A00DDC791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932E8C2E23336F6A00DDC791 /* Assets.xcassets */; };
 		932E8C3223336F6A00DDC791 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932E8C3123336F6A00DDC791 /* Preview Assets.xcassets */; };
 		932E8C3523336F6A00DDC791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932E8C3323336F6A00DDC791 /* LaunchScreen.storyboard */; };
@@ -36,8 +34,6 @@
 		6AEAB335C19F0E95E8DE7846 /* Pods-FreeNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.release.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.release.xcconfig"; sourceTree = "<group>"; };
 		932E8C2523336F6900DDC791 /* FreeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		932E8C2823336F6900DDC791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		932E8C2A23336F6900DDC791 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		932E8C2C23336F6900DDC791 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		932E8C2E23336F6A00DDC791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		932E8C3123336F6A00DDC791 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		932E8C3423336F6A00DDC791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,8 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				932E8C2823336F6900DDC791 /* AppDelegate.swift */,
-				932E8C2A23336F6900DDC791 /* SceneDelegate.swift */,
-				932E8C2C23336F6900DDC791 /* ContentView.swift */,
 				932E8C2E23336F6A00DDC791 /* Assets.xcassets */,
 				932E8C3323336F6A00DDC791 /* LaunchScreen.storyboard */,
 				932E8C3623336F6A00DDC791 /* Info.plist */,
@@ -136,7 +130,6 @@
 				57B43E53F0DE6E8B03A76608 /* Pods-FreeNowTests.debug.xcconfig */,
 				548A44DDE59ED63D58F6CFE5 /* Pods-FreeNowTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -309,8 +302,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */,
-				932E8C2B23336F6900DDC791 /* SceneDelegate.swift in Sources */,
-				932E8C2D23336F6900DDC791 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
