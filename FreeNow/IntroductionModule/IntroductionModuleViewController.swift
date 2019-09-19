@@ -6,7 +6,7 @@ import RxCocoa
 final class IntroductionModuleViewController: AppViewController {
     
     // MARK: Dependencies
-    private let viewModel:  IntroductionModuleViewModel
+    private let viewModel: IntroductionModuleViewModel
     
     // MARK: Rx
     private let viewAction = PublishRelay<IntroductionModuleViewAction>()
@@ -22,7 +22,7 @@ final class IntroductionModuleViewController: AppViewController {
 
     // MARK: - Life cycle
     
-    init(viewModel:  IntroductionModuleViewModel) {
+    init(viewModel: IntroductionModuleViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -135,7 +135,7 @@ private extension  IntroductionModuleViewController {
 
 // MARK: - Rx
 
-private extension  IntroductionModuleViewController {
+private extension IntroductionModuleViewController {
     
     /// Starts observing view effects to react accordingly.
     func observeViewEffect() {

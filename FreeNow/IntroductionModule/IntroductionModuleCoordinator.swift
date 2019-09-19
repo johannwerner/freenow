@@ -26,7 +26,7 @@ final class IntroductionModuleCoordinator {
 extension  IntroductionModuleCoordinator {
     
     func showIntroduction(animated: Bool) {
-        let viewModel =  IntroductionModuleViewModel(
+        let viewModel = IntroductionModuleViewModel(
             coordinator: self,
             configurator: configurator
         )

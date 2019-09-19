@@ -5,7 +5,7 @@ import RxSwift
 /// - Requires: `RxSwift`, `RxCocoa`
 /// - Note: A view model can refer to one or more use cases.
 
-final class  IntroductionModuleViewModel {
+final class IntroductionModuleViewModel {
 
     // MARK: MvRx
     let viewEffect = PublishRelay< IntroductionModuleViewEffect>()
@@ -32,7 +32,7 @@ final class  IntroductionModuleViewModel {
 
 // MARK: - Public functions
 
-extension  IntroductionModuleViewModel {
+extension IntroductionModuleViewModel {
     
     func bind(to viewAction: PublishRelay< IntroductionModuleViewAction>) {
         viewAction
@@ -49,7 +49,7 @@ extension  IntroductionModuleViewModel {
 
 // MARK: - Private functions
 
-private extension  IntroductionModuleViewModel {
+private extension IntroductionModuleViewModel {
     func showNextView() {
         getListOfLocations()
     }
@@ -73,7 +73,7 @@ private extension  IntroductionModuleViewModel {
 
 // MARK: - Rx
 
-private extension  IntroductionModuleViewModel {
+private extension IntroductionModuleViewModel {
     
     /// - Note: Privately observing view effects in the view model is meant to make the association between a specific effect and certain view states easier.
     func observeViewEffect() {
