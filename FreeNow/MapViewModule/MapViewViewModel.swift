@@ -6,7 +6,7 @@ import RxSwift
 final class MapViewViewModel {
 
     // MARK: - Properties
-    var position: Position
+    var positions: NonEmptyArray<Position>
 
     // MARK: MvRx
     let viewEffect = PublishRelay<MapViewViewEffect>()
@@ -22,12 +22,12 @@ final class MapViewViewModel {
     
     init(coordinator: MapViewCoordinator,
          configurator: MapViewConfigurator,
-         position: Position
+         positions: NonEmptyArray<Position>
         ) {
         self.coordinator = coordinator
         let interactor = configurator.mapViewInteractor
         self.useCase = MapViewUseCase(interactor: interactor)
-        self.position = position
+        self.positions = positions
         
         observeViewEffect()
     }

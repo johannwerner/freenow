@@ -50,7 +50,6 @@
 		93ACEA3E2333819200056902 /* LocationsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA312333819200056902 /* LocationsListInteractor.swift */; };
 		93ACEA3F2333819200056902 /* LocationsListInteractorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA322333819200056902 /* LocationsListInteractorApi.swift */; };
 		93ACEA402333819200056902 /* LocationCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA342333819200056902 /* LocationCarModel.swift */; };
-		93ACEA412333819200056902 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA352333819200056902 /* LocationModel.swift */; };
 		93ACEA422333819200056902 /* LocationsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA362333819200056902 /* LocationsListCoordinator.swift */; };
 		93ACEA432333819200056902 /* LocationsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA372333819200056902 /* LocationsListViewModel.swift */; };
 		93ACEA442333819200056902 /* LocationsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA382333819200056902 /* LocationsListModel.swift */; };
@@ -138,7 +137,6 @@
 		93ACEA312333819200056902 /* LocationsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListInteractor.swift; sourceTree = "<group>"; };
 		93ACEA322333819200056902 /* LocationsListInteractorApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListInteractorApi.swift; sourceTree = "<group>"; };
 		93ACEA342333819200056902 /* LocationCarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCarModel.swift; sourceTree = "<group>"; };
-		93ACEA352333819200056902 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		93ACEA362333819200056902 /* LocationsListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListCoordinator.swift; sourceTree = "<group>"; };
 		93ACEA372333819200056902 /* LocationsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListViewModel.swift; sourceTree = "<group>"; };
 		93ACEA382333819200056902 /* LocationsListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListModel.swift; sourceTree = "<group>"; };
@@ -337,7 +335,6 @@
 			isa = PBXGroup;
 			children = (
 				93ACEA342333819200056902 /* LocationCarModel.swift */,
-				93ACEA352333819200056902 /* LocationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -593,7 +590,6 @@
 				93ACE9F62333744400056902 /* IntroductionModuleConfigurator.swift in Sources */,
 				93ACEA6A2333AECB00056902 /* MapViewUseCase.swift in Sources */,
 				93ACEA3B2333819200056902 /* LocationsListConfigurator.swift in Sources */,
-				93ACEA412333819200056902 /* LocationModel.swift in Sources */,
 				93ACE9E42333737B00056902 /* UIAplication+Window.swift in Sources */,
 				93ACE9D62333728400056902 /* String+App.swift in Sources */,
 				93ACEA532333A4C100056902 /* CarListInteractor.swift in Sources */,

@@ -33,7 +33,7 @@ extension MapViewCoordinator {
         let viewModel = MapViewViewModel(
             coordinator: self,
             configurator: configurator,
-            position: position
+            positions: [position].convertToNonEmptyArray()!
         )
         let viewController = MapViewViewController(viewModel: viewModel)
         navigationController.pushViewController(

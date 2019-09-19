@@ -22,3 +22,8 @@ enum LocationsListViewAction {
 struct LocationListConstants {
     static let carListUrl = "https://fake-poi-api.mytaxi.com/?p1Lat=%f&p1Lon=%f&p2Lat=%f&p2Lon=%f"
 }
+
+struct LocationModel: Codable {
+    var name: String
+    var bounds: [Position]
+}

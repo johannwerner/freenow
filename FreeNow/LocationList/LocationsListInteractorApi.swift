@@ -5,13 +5,13 @@ import RxAlamofire
 /// - Requires: `RxSwift`, `Async`, `RxAlamofire`
 
 final class LocationsListInteractorApi: LocationsListInteractor {
-       
-        // MARK: - Properties
-        
-        // MARK: Dependencies
-        
-        // MARK: - Life cycle
-    }
+   
+    // MARK: - Properties
+    
+    // MARK: Dependencies
+    
+    // MARK: - Life cycle
+}
 
 extension LocationsListInteractorApi {
     // MARK: - Internal

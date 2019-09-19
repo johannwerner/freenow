@@ -57,10 +57,15 @@ private extension MapViewViewController {
     func setUpMap() {
         view.addSubview(mapView)
         mapView.autoPinEdgesToSuperviewEdges()
-        addPinToMap(position: viewModel.position)
-        zoomMapToPosition(position: viewModel.position)
+        handlePins()
     }
     
+    func handlePins() {
+        viewModel.positions.forEach { position in
+            addPinToMap(position: position)
+        }
+        zoomMapToPosition(position: viewModel.positions.first)
+    }
     func addPinToMap(position: Position) {
         let annotation = MKPointAnnotation()
         let latitidue = position.latitude
