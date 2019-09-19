@@ -75,24 +75,7 @@ extension CarListViewModel {
 
 // MARK: - Private functions
 
-private extension CarListViewModel {
-    
-    func getListOfCarsForLocation() {
-        useCase.getCarListForLocation()
-            .subscribe(onNext: { [unowned self] status in
-                switch status {
-                case .loading:
-                    break
-                case .error:
-                    break
-                case .success(let listOfCars):
-                    self.model.carModels = listOfCars
-                    self.viewEffect.accept(.success)
-                }
-            })
-            .disposed(by: disposeBag)
-    }
-}
+private extension CarListViewModel {}
 
 // MARK: - Rx
 

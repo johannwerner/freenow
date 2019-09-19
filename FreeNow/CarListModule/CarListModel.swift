@@ -17,10 +17,6 @@ enum CarListViewAction {
     case selectedIndex(atIndex: Int)
 }
 
-struct CarListConstants {
-    static let carListUrl = "https://car2go.now.sh/vehicles/%@"
-}
-
 struct CLMLComments {
     static let vehicleCellTitle = "Title of vehicle information in a list of vehicles."
 }

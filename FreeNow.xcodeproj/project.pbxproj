@@ -72,6 +72,7 @@
 		93ACEA6B2333AECB00056902 /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA632333AECB00056902 /* MapViewCoordinator.swift */; };
 		93ACEA6C2333AECB00056902 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA642333AECB00056902 /* MapViewModel.swift */; };
 		93ACEA6D2333AECB00056902 /* MapViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA652333AECB00056902 /* MapViewConfigurator.swift */; };
+		93ACEA6F2333D87300056902 /* CarListTestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA6E2333D87300056902 /* CarListTestInteractor.swift */; };
 		F6B3A103761C67E01781FECF /* Pods_FreeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DACBBCEA4F82D22CA7CFCF /* Pods_FreeNow.framework */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +160,7 @@
 		93ACEA632333AECB00056902 /* MapViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
 		93ACEA642333AECB00056902 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		93ACEA652333AECB00056902 /* MapViewConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewConfigurator.swift; sourceTree = "<group>"; };
+		93ACEA6E2333D87300056902 /* CarListTestInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListTestInteractor.swift; sourceTree = "<group>"; };
 		E7D6BC90656871F39027299F /* Pods-FreeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.debug.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +228,7 @@
 		932E8C3E23336F6B00DDC791 /* FreeNowTests */ = {
 			isa = PBXGroup;
 			children = (
+				93ACEA6E2333D87300056902 /* CarListTestInteractor.swift */,
 				932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */,
 				932E8C4123336F6B00DDC791 /* Info.plist */,
 			);
@@ -642,6 +645,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				932E8C4023336F6B00DDC791 /* FreeNowTests.swift in Sources */,
+				93ACEA6F2333D87300056902 /* CarListTestInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
