@@ -29,7 +29,7 @@ extension MapViewInteractorApi {
 
 private extension MapViewInteractorApi {
     func url(position1: Position, position2: Position) -> String {
-        String(format: LocationListConstants.carListUrl, position1.latitude, position1.longitude, position2.latitude, position2.longitude)
+        String(format: MapConstants.carListUrl, position1.latitude, position1.longitude, position2.latitude, position2.longitude)
     }
 }
 
