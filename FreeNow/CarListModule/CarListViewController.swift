@@ -7,7 +7,7 @@ import PureLayout
 final class CarListViewController: UIViewController {
     
     // MARK: Dependencies
-    private let viewModel: CarListViewModel!
+    private let viewModel: CarListViewModel
     
     // MARK: Rx
     private let viewAction = PublishRelay<CarListViewAction>()

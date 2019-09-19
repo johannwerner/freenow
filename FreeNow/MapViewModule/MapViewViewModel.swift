@@ -40,6 +40,7 @@ extension MapViewViewModel {
     func bind(to viewAction: PublishRelay<MapViewViewAction>) {
         viewAction
             .asObservable()
+            .debounce(DispatchTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
             .subscribe(onNext: { [unowned self] viewAction in
                 switch viewAction {
                 case .mapBoundsUpdated(let mapBounds):

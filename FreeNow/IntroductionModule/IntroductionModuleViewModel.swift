@@ -61,7 +61,7 @@ private extension  IntroductionModuleViewModel {
                 case .loading:
                     self.viewEffect.accept(.loading)
                 case .error:
-                    break
+                    self.viewEffect.accept(.error)
                 case .success(let listOfLocations):
                     self.viewEffect.accept(.success)
                     self.coordinator.showLocationList(models: listOfLocations, animated: true)
@@ -83,6 +83,7 @@ private extension  IntroductionModuleViewModel {
                 switch effect {
                 case .success: break
                 case .loading: break
+                case   .error: break
                 }
             })
             .disposed(by: disposeBag)

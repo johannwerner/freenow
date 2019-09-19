@@ -214,9 +214,9 @@
 		932E8C2723336F6900DDC791 /* FreeNow */ = {
 			isa = PBXGroup;
 			children = (
-				93ACEA462333A4C000056902 /* CarListModule */,
-				93ACEA2D2333819200056902 /* LocationList */,
 				93ACE9EC2333744400056902 /* IntroductionModule */,
+				93ACEA2D2333819200056902 /* LocationList */,
+				93ACEA462333A4C000056902 /* CarListModule */,
 				93ACEA5D2333AECB00056902 /* MapViewModule */,
 				93ACE9CD2333715D00056902 /* SupportingFiles */,
 			);
@@ -285,13 +285,13 @@
 			isa = PBXGroup;
 			children = (
 				93ACE9ED2333744400056902 /* IntroductionModuleViewController.swift */,
-				93ACE9EE2333744400056902 /* IntroductionModuleConfigurator.swift */,
 				93ACE9EF2333744400056902 /* IntroductionModuleViewModel.swift */,
 				93ACE9F02333744400056902 /* IntroductionModuleModel.swift */,
-				93ACE9F12333744400056902 /* IntroductionModuleInteractorApi.swift */,
 				93ACE9F22333744400056902 /* IntroductionModuleUseCase.swift */,
-				93ACE9F32333744400056902 /* IntroductionModuleCoordinator.swift */,
 				93ACE9F42333744400056902 /* IntroductionModuleInteractor.swift */,
+				93ACE9F12333744400056902 /* IntroductionModuleInteractorApi.swift */,
+				93ACE9EE2333744400056902 /* IntroductionModuleConfigurator.swift */,
+				93ACE9F32333744400056902 /* IntroductionModuleCoordinator.swift */,
 			);
 			path = IntroductionModule;
 			sourceTree = "<group>";
@@ -318,14 +318,14 @@
 			isa = PBXGroup;
 			children = (
 				93ACEA332333819200056902 /* Models */,
-				93ACEA2E2333819200056902 /* LocationsListConfigurator.swift */,
-				93ACEA2F2333819200056902 /* LocationsListUseCase.swift */,
 				93ACEA302333819200056902 /* LocationsListViewController.swift */,
-				93ACEA312333819200056902 /* LocationsListInteractor.swift */,
-				93ACEA322333819200056902 /* LocationsListInteractorApi.swift */,
-				93ACEA362333819200056902 /* LocationsListCoordinator.swift */,
 				93ACEA372333819200056902 /* LocationsListViewModel.swift */,
 				93ACEA382333819200056902 /* LocationsListModel.swift */,
+				93ACEA2F2333819200056902 /* LocationsListUseCase.swift */,
+				93ACEA312333819200056902 /* LocationsListInteractor.swift */,
+				93ACEA322333819200056902 /* LocationsListInteractorApi.swift */,
+				93ACEA2E2333819200056902 /* LocationsListConfigurator.swift */,
+				93ACEA362333819200056902 /* LocationsListCoordinator.swift */,
 				93ACEA392333819200056902 /* ReusableViews */,
 			);
 			path = LocationList;
@@ -351,14 +351,14 @@
 			isa = PBXGroup;
 			children = (
 				93ACEA4B2333A4C000056902 /* Models */,
-				93ACEA472333A4C000056902 /* CarListInteractor.swift */,
-				93ACEA482333A4C000056902 /* CarListViewModel.swift */,
 				93ACEA492333A4C000056902 /* CarListViewController.swift */,
-				93ACEA4A2333A4C000056902 /* CarListCoordinator.swift */,
-				93ACEA4D2333A4C000056902 /* CarListInteractorApi.swift */,
+				93ACEA482333A4C000056902 /* CarListViewModel.swift */,
 				93ACEA4E2333A4C000056902 /* CarListModel.swift */,
-				93ACEA4F2333A4C000056902 /* CarListConfigurator.swift */,
 				93ACEA502333A4C000056902 /* CarListUseCase.swift */,
+				93ACEA472333A4C000056902 /* CarListInteractor.swift */,
+				93ACEA4D2333A4C000056902 /* CarListInteractorApi.swift */,
+				93ACEA4A2333A4C000056902 /* CarListCoordinator.swift */,
+				93ACEA4F2333A4C000056902 /* CarListConfigurator.swift */,
 				93ACEA512333A4C000056902 /* ResubleViews */,
 			);
 			path = CarListModule;
@@ -385,12 +385,12 @@
 			children = (
 				93ACEA5E2333AECB00056902 /* MapViewViewController.swift */,
 				93ACEA5F2333AECB00056902 /* MapViewViewModel.swift */,
-				93ACEA602333AECB00056902 /* MapViewInteractorApi.swift */,
-				93ACEA612333AECB00056902 /* MapViewInteractor.swift */,
-				93ACEA622333AECB00056902 /* MapViewUseCase.swift */,
-				93ACEA632333AECB00056902 /* MapViewCoordinator.swift */,
 				93ACEA642333AECB00056902 /* MapViewModel.swift */,
+				93ACEA622333AECB00056902 /* MapViewUseCase.swift */,
+				93ACEA612333AECB00056902 /* MapViewInteractor.swift */,
+				93ACEA602333AECB00056902 /* MapViewInteractorApi.swift */,
 				93ACEA652333AECB00056902 /* MapViewConfigurator.swift */,
+				93ACEA632333AECB00056902 /* MapViewCoordinator.swift */,
 			);
 			path = MapViewModule;
 			sourceTree = "<group>";

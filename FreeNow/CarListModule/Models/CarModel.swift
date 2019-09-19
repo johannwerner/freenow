@@ -1,7 +1,6 @@
 import Foundation
 
 struct CarModel: Codable, Equatable {
-    //TODO: Not really neccesary can be removed
     static func == (lhs: CarModel, rhs: CarModel) -> Bool {
         lhs.id == rhs.id
     }

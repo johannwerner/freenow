@@ -48,7 +48,7 @@ private extension LocationsListUseCase {
             assertionFailure("Bounds array is empty")
             return nil
         }
-        guard let position2 = locationModel.bounds[safe: 1] else {
+        guard let position2 = locationModel.bounds[safe: .tail(0)] else {
             assertionFailure("Bounds array only has one element")
             return nil
         }

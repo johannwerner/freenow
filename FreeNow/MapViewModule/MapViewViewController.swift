@@ -48,6 +48,14 @@ final class MapViewViewController: UIViewController {
     }
 }
 
+// MARK: - MARKMKMapViewDelegate
+extension MapViewViewController: MKMapViewDelegate {    
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated: Bool) {
+        viewAction.accept(.mapBoundsUpdated(self.mapView.edgeBounds()))
+    }
+}
+
+
 // MARK: - Setup
 
 private extension MapViewViewController {
@@ -150,8 +158,8 @@ private extension MapViewViewController {
 
 private extension MKMapView {
     func edgeBounds() -> MapBounds {
-        let nePoint = CGPoint(x: self.bounds.maxX, y: self.bounds.origin.y)
-        let swPoint = CGPoint(x: self.bounds.minX, y: self.bounds.maxY)
+        let nePoint = CGPoint(x: bounds.maxX, y: bounds.origin.y)
+        let swPoint = CGPoint(x: bounds.minX, y: bounds.maxY)
         let neCoord = self.convert(nePoint, toCoordinateFrom: self)
         let swCoord = self.convert(swPoint, toCoordinateFrom: self)
         return (
@@ -167,11 +175,5 @@ private extension CLLocationCoordinate2D {
             latitude: latitude,
             longitude: longitude
         )
-    }
-}
-
-extension MapViewViewController: MKMapViewDelegate {
-    func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
-        viewAction.accept(.mapBoundsUpdated(self.mapView.edgeBounds()))
     }
 }

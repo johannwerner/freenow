@@ -26,9 +26,7 @@ extension IntroductionModuleUseCase {
                     guard let listOfArray = data as? Array<Dictionary<String, Any>> else {
                         return .error
                     }
-                    let listOfObjects = listOfArray.compactMap({ dict -> IntroductionLocationModel? in
-                        IntroductionLocationModel.parse(from: dict)
-                    })
+                    let listOfObjects = listOfArray.convert()
                     guard let nonEmptyArray = listOfObjects.convertToNonEmptyArray() else {
                         return .error
                     }
@@ -37,5 +35,19 @@ extension IntroductionModuleUseCase {
                     return .error
                 }
         }
+    }
+}
+
+private extension Array where Iterator.Element == Dictionary<String, Any> {
+    func convert() -> [IntroductionLocationModel] {
+        compactMap({ dict -> IntroductionLocationModel? in
+            guard let model = IntroductionLocationModel.parse(from: dict) else {
+                return nil
+            }
+            guard model.bounds.count > 1 else {
+                return nil
+            }
+            return model
+        })
     }
 }

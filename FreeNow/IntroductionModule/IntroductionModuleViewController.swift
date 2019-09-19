@@ -17,8 +17,6 @@ final class IntroductionModuleViewController: AppViewController {
     private let subtitleLabel = UILabel()
     private let activityIndicator = UIActivityIndicatorView()
     
-    @Published var password: String = ""
-    
     // MARK: Tooling
     private let disposeBag = DisposeBag()
 
@@ -149,6 +147,8 @@ private extension  IntroductionModuleViewController {
                 self.stopLoadingAnimations()
             case .loading:
                 self.startLoadingAnimations()
+            case .error:
+                self.stopLoadingAnimations()
             }
         })
         .disposed(by: disposeBag)}

@@ -38,7 +38,7 @@ private struct ActivityViewStyle {
     static let backgroundColor = ColorTheme.black
     static let animationDuration: TimeInterval = 0.3
     static let animationStyle: UIView.AnimationOptions = .curveEaseOut
-    static let activityIndicatorColor = UIColor.red
+    static let activityIndicatorColor = UIColor.white
 }
 
 // MARK: - Activity View Component

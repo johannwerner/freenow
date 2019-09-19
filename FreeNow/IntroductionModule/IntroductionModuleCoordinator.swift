@@ -64,7 +64,7 @@ private extension NonEmptyArray where Iterator.Element == IntroductionLocationMo
         map { model -> LocationModel in
             LocationModel(
                 name: model.name,
-                bounds: model.bounds
+                bounds: model.bounds.convertToNonEmptyArray()!
             )
         }
     }
