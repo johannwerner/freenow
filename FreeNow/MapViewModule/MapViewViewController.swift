@@ -4,6 +4,9 @@ import MapKit
 
 /// Show a map view
 /// - Requires: `RxSwift`, `RxCocoa`
+
+typealias MapBounds = (position1: Position, position2: Position)
+
 final class MapViewViewController: UIViewController {
     
     // MARK: Dependencies
@@ -53,13 +56,14 @@ private extension MapViewViewController {
     func setUpViews() {
         view.backgroundColor = .white
         setUpMap()
+        setUpPrimaryButton()
     }
     
     func setUpMap() {
         view.addSubview(mapView)
         mapView.autoPinEdgesToSuperviewEdges()
         handlePins()
-        setUpPrimaryButton()
+        zoomMapToPosition(position: viewModel.positions.first)
     }
     
     func setUpPrimaryButton() {
@@ -77,7 +81,8 @@ private extension MapViewViewController {
         )
         
         primaryButton.rx.tap.subscribe(onNext: { [unowned self] _ in
-            self.viewAction.accept(.primaryButtonPressed)
+            self.viewAction.accept(.mapBoundsUpdated(self.mapView.edgeBounds()))
+            self.mapView.delegate = self
         })
         .disposed(by: disposeBag)
     }
@@ -86,7 +91,6 @@ private extension MapViewViewController {
         viewModel.positions.forEach { position in
             addPinToMap(position: position)
         }
-        zoomMapToPosition(position: viewModel.positions.first)
     }
     func addPinToMap(position: Position) {
         let annotation = MKPointAnnotation()
@@ -132,14 +136,42 @@ private extension MapViewViewController {
     func observeViewEffect() {
         viewModel
             .viewEffect
-            .subscribe(onNext: { effect in
+            .subscribe(onNext: { [unowned self] effect in
                 switch effect {
                 case .success:
-                    break
+                    self.handlePins()
                 case .loading:
                     break
                 }
             })
             .disposed(by: disposeBag)
+    }
+}
+
+private extension MKMapView {
+    func edgeBounds() -> MapBounds {
+        let nePoint = CGPoint(x: self.bounds.maxX, y: self.bounds.origin.y)
+        let swPoint = CGPoint(x: self.bounds.minX, y: self.bounds.maxY)
+        let neCoord = self.convert(nePoint, toCoordinateFrom: self)
+        let swCoord = self.convert(swPoint, toCoordinateFrom: self)
+        return (
+            position1: neCoord.convert(),
+            position2: swCoord.convert()
+        )
+    }
+}
+
+private extension CLLocationCoordinate2D {
+    func convert() -> Position {
+        Position(
+            latitude: latitude,
+            longitude: longitude
+        )
+    }
+}
+
+extension MapViewViewController: MKMapViewDelegate {
+    func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
+        viewAction.accept(.mapBoundsUpdated(self.mapView.edgeBounds()))
     }
 }

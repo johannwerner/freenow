@@ -13,7 +13,7 @@ enum MapViewViewEffect {
 
 /// View action enum for MapView.
 enum MapViewViewAction {
-    case primaryButtonPressed
+    case mapBoundsUpdated(MapBounds)
 }
 
 struct MapConstants {

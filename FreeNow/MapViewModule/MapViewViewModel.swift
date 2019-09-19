@@ -42,8 +42,8 @@ extension MapViewViewModel {
             .asObservable()
             .subscribe(onNext: { [unowned self] viewAction in
                 switch viewAction {
-                case .primaryButtonPressed: break
-                    
+                case .mapBoundsUpdated(let mapBounds):
+                    self.showCarList(position1: mapBounds.position1, position2: mapBounds.position2)
                 }
             })
             .disposed(by: disposeBag)
