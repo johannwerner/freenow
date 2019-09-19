@@ -6,6 +6,7 @@ import RxSwift
 final class LocationsListViewModel {
     
     // MARK: - Properties
+    private var listOfLocations: NonEmptyArray<LocationModel>
     
     // MARK: MvRx
     let viewEffect = PublishRelay<LocationsListViewEffect>()
@@ -13,7 +14,6 @@ final class LocationsListViewModel {
     // MARK: Dependencies
     private let coordinator: LocationsListCoordinator
     private let useCase: LocationsListUseCase
-    private var listOfLocations: NonEmptyArray<LocationModel>
     
     // MARK: Tooling
     private let disposeBag = DisposeBag()
