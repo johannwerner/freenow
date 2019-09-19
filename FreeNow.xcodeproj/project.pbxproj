@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56789DE5663A892EBBB59763 /* Pods_FreeNowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C15E09FB3459A01BE925C6 /* Pods_FreeNowTests.framework */; };
+		932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C2823336F6900DDC791 /* AppDelegate.swift */; };
+		932E8C2B23336F6900DDC791 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C2A23336F6900DDC791 /* SceneDelegate.swift */; };
+		932E8C2D23336F6900DDC791 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C2C23336F6900DDC791 /* ContentView.swift */; };
+		932E8C2F23336F6A00DDC791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932E8C2E23336F6A00DDC791 /* Assets.xcassets */; };
+		932E8C3223336F6A00DDC791 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932E8C3123336F6A00DDC791 /* Preview Assets.xcassets */; };
+		932E8C3523336F6A00DDC791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932E8C3323336F6A00DDC791 /* LaunchScreen.storyboard */; };
+		932E8C4023336F6B00DDC791 /* FreeNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */; };
+		F6B3A103761C67E01781FECF /* Pods_FreeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DACBBCEA4F82D22CA7CFCF /* Pods_FreeNow.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		932E8C3C23336F6B00DDC791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 932E8C1D23336F6900DDC791 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 932E8C2423336F6900DDC791;
+			remoteInfo = FreeNow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22DACBBCEA4F82D22CA7CFCF /* Pods_FreeNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C15E09FB3459A01BE925C6 /* Pods_FreeNowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeNowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		548A44DDE59ED63D58F6CFE5 /* Pods-FreeNowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNowTests.release.xcconfig"; path = "Target Support Files/Pods-FreeNowTests/Pods-FreeNowTests.release.xcconfig"; sourceTree = "<group>"; };
+		57B43E53F0DE6E8B03A76608 /* Pods-FreeNowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNowTests.debug.xcconfig"; path = "Target Support Files/Pods-FreeNowTests/Pods-FreeNowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AEAB335C19F0E95E8DE7846 /* Pods-FreeNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.release.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.release.xcconfig"; sourceTree = "<group>"; };
+		932E8C2523336F6900DDC791 /* FreeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		932E8C2823336F6900DDC791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		932E8C2A23336F6900DDC791 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		932E8C2C23336F6900DDC791 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		932E8C2E23336F6A00DDC791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		932E8C3123336F6A00DDC791 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		932E8C3423336F6A00DDC791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		932E8C3623336F6A00DDC791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932E8C3B23336F6B00DDC791 /* FreeNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowTests.swift; sourceTree = "<group>"; };
+		932E8C4123336F6B00DDC791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7D6BC90656871F39027299F /* Pods-FreeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.debug.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		932E8C2223336F6900DDC791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B3A103761C67E01781FECF /* Pods_FreeNow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932E8C3823336F6A00DDC791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56789DE5663A892EBBB59763 /* Pods_FreeNowTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BF0A31737435B2EB781DD9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22DACBBCEA4F82D22CA7CFCF /* Pods_FreeNow.framework */,
+				39C15E09FB3459A01BE925C6 /* Pods_FreeNowTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		932E8C1C23336F6900DDC791 = {
+			isa = PBXGroup;
+			children = (
+				932E8C2723336F6900DDC791 /* FreeNow */,
+				932E8C3E23336F6B00DDC791 /* FreeNowTests */,
+				932E8C2623336F6900DDC791 /* Products */,
+				ACE6055E086F9CD08AAB1F3F /* Pods */,
+				6BF0A31737435B2EB781DD9F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		932E8C2623336F6900DDC791 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				932E8C2523336F6900DDC791 /* FreeNow.app */,
+				932E8C3B23336F6B00DDC791 /* FreeNowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		932E8C2723336F6900DDC791 /* FreeNow */ = {
+			isa = PBXGroup;
+			children = (
+				932E8C2823336F6900DDC791 /* AppDelegate.swift */,
+				932E8C2A23336F6900DDC791 /* SceneDelegate.swift */,
+				932E8C2C23336F6900DDC791 /* ContentView.swift */,
+				932E8C2E23336F6A00DDC791 /* Assets.xcassets */,
+				932E8C3323336F6A00DDC791 /* LaunchScreen.storyboard */,
+				932E8C3623336F6A00DDC791 /* Info.plist */,
+				932E8C3023336F6A00DDC791 /* Preview Content */,
+			);
+			path = FreeNow;
+			sourceTree = "<group>";
+		};
+		932E8C3023336F6A00DDC791 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				932E8C3123336F6A00DDC791 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		932E8C3E23336F6B00DDC791 /* FreeNowTests */ = {
+			isa = PBXGroup;
+			children = (
+				932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */,
+				932E8C4123336F6B00DDC791 /* Info.plist */,
+			);
+			path = FreeNowTests;
+			sourceTree = "<group>";
+		};
+		ACE6055E086F9CD08AAB1F3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7D6BC90656871F39027299F /* Pods-FreeNow.debug.xcconfig */,
+				6AEAB335C19F0E95E8DE7846 /* Pods-FreeNow.release.xcconfig */,
+				57B43E53F0DE6E8B03A76608 /* Pods-FreeNowTests.debug.xcconfig */,
+				548A44DDE59ED63D58F6CFE5 /* Pods-FreeNowTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		932E8C2423336F6900DDC791 /* FreeNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 932E8C4423336F6B00DDC791 /* Build configuration list for PBXNativeTarget "FreeNow" */;
+			buildPhases = (
+				7B6EB48A52EAE0946C991C16 /* [CP] Check Pods Manifest.lock */,
+				932E8C2123336F6900DDC791 /* Sources */,
+				932E8C2223336F6900DDC791 /* Frameworks */,
+				932E8C2323336F6900DDC791 /* Resources */,
+				3438C8E11D06239083D5010D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreeNow;
+			productName = FreeNow;
+			productReference = 932E8C2523336F6900DDC791 /* FreeNow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		932E8C3A23336F6A00DDC791 /* FreeNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 932E8C4723336F6B00DDC791 /* Build configuration list for PBXNativeTarget "FreeNowTests" */;
+			buildPhases = (
+				A019670200F25A6A4C099CD6 /* [CP] Check Pods Manifest.lock */,
+				932E8C3723336F6A00DDC791 /* Sources */,
+				932E8C3823336F6A00DDC791 /* Frameworks */,
+				932E8C3923336F6A00DDC791 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				932E8C3D23336F6B00DDC791 /* PBXTargetDependency */,
+			);
+			name = FreeNowTests;
+			productName = FreeNowTests;
+			productReference = 932E8C3B23336F6B00DDC791 /* FreeNowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		932E8C1D23336F6900DDC791 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Johann Werner";
+				TargetAttributes = {
+					932E8C2423336F6900DDC791 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					932E8C3A23336F6A00DDC791 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 932E8C2423336F6900DDC791;
+					};
+				};
+			};
+			buildConfigurationList = 932E8C2023336F6900DDC791 /* Build configuration list for PBXProject "FreeNow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 932E8C1C23336F6900DDC791;
+			productRefGroup = 932E8C2623336F6900DDC791 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				932E8C2423336F6900DDC791 /* FreeNow */,
+				932E8C3A23336F6A00DDC791 /* FreeNowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		932E8C2323336F6900DDC791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932E8C3523336F6A00DDC791 /* LaunchScreen.storyboard in Resources */,
+				932E8C3223336F6A00DDC791 /* Preview Assets.xcassets in Resources */,
+				932E8C2F23336F6A00DDC791 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932E8C3923336F6A00DDC791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3438C8E11D06239083D5010D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeNow/Pods-FreeNow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeNow/Pods-FreeNow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeNow/Pods-FreeNow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B6EB48A52EAE0946C991C16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreeNow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A019670200F25A6A4C099CD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreeNowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		932E8C2123336F6900DDC791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */,
+				932E8C2B23336F6900DDC791 /* SceneDelegate.swift in Sources */,
+				932E8C2D23336F6900DDC791 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932E8C3723336F6A00DDC791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932E8C4023336F6B00DDC791 /* FreeNowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		932E8C3D23336F6B00DDC791 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 932E8C2423336F6900DDC791 /* FreeNow */;
+			targetProxy = 932E8C3C23336F6B00DDC791 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		932E8C3323336F6A00DDC791 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				932E8C3423336F6A00DDC791 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		932E8C4223336F6B00DDC791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		932E8C4323336F6B00DDC791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		932E8C4523336F6B00DDC791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D6BC90656871F39027299F /* Pods-FreeNow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FreeNow/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FreeNow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jojo.FreeNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		932E8C4623336F6B00DDC791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AEAB335C19F0E95E8DE7846 /* Pods-FreeNow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FreeNow/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FreeNow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jojo.FreeNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		932E8C4823336F6B00DDC791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B43E53F0DE6E8B03A76608 /* Pods-FreeNowTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FreeNowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jojo.FreeNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeNow.app/FreeNow";
+			};
+			name = Debug;
+		};
+		932E8C4923336F6B00DDC791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548A44DDE59ED63D58F6CFE5 /* Pods-FreeNowTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FreeNowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jojo.FreeNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeNow.app/FreeNow";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		932E8C2023336F6900DDC791 /* Build configuration list for PBXProject "FreeNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932E8C4223336F6B00DDC791 /* Debug */,
+				932E8C4323336F6B00DDC791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		932E8C4423336F6B00DDC791 /* Build configuration list for PBXNativeTarget "FreeNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932E8C4523336F6B00DDC791 /* Debug */,
+				932E8C4623336F6B00DDC791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		932E8C4723336F6B00DDC791 /* Build configuration list for PBXNativeTarget "FreeNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932E8C4823336F6B00DDC791 /* Debug */,
+				932E8C4923336F6B00DDC791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 932E8C1D23336F6900DDC791 /* Project object */;
+}
