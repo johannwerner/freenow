@@ -10,9 +10,11 @@
 		56789DE5663A892EBBB59763 /* Pods_FreeNowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C15E09FB3459A01BE925C6 /* Pods_FreeNowTests.framework */; };
 		932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C2823336F6900DDC791 /* AppDelegate.swift */; };
 		932E8C2F23336F6A00DDC791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932E8C2E23336F6A00DDC791 /* Assets.xcassets */; };
-		932E8C3223336F6A00DDC791 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932E8C3123336F6A00DDC791 /* Preview Assets.xcassets */; };
-		932E8C3523336F6A00DDC791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932E8C3323336F6A00DDC791 /* LaunchScreen.storyboard */; };
 		932E8C4023336F6B00DDC791 /* FreeNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */; };
+		93ACE9D0233371AD00056902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93ACE9CE233371AD00056902 /* LaunchScreen.storyboard */; };
+		93ACE9D52333728400056902 /* Decodable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D22333728400056902 /* Decodable+Utils.swift */; };
+		93ACE9D62333728400056902 /* String+CarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D32333728400056902 /* String+CarApp.swift */; };
+		93ACE9D72333728400056902 /* Array+CarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D42333728400056902 /* Array+CarApp.swift */; };
 		F6B3A103761C67E01781FECF /* Pods_FreeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DACBBCEA4F82D22CA7CFCF /* Pods_FreeNow.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,12 +37,14 @@
 		932E8C2523336F6900DDC791 /* FreeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		932E8C2823336F6900DDC791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		932E8C2E23336F6A00DDC791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		932E8C3123336F6A00DDC791 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		932E8C3423336F6A00DDC791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		932E8C3623336F6A00DDC791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		932E8C3B23336F6B00DDC791 /* FreeNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowTests.swift; sourceTree = "<group>"; };
 		932E8C4123336F6B00DDC791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93ACE9CF233371AD00056902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93ACE9D22333728400056902 /* Decodable+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decodable+Utils.swift"; sourceTree = "<group>"; };
+		93ACE9D32333728400056902 /* String+CarApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CarApp.swift"; sourceTree = "<group>"; };
+		93ACE9D42333728400056902 /* Array+CarApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+CarApp.swift"; sourceTree = "<group>"; };
 		E7D6BC90656871F39027299F /* Pods-FreeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.debug.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,21 +100,9 @@
 		932E8C2723336F6900DDC791 /* FreeNow */ = {
 			isa = PBXGroup;
 			children = (
-				932E8C2823336F6900DDC791 /* AppDelegate.swift */,
-				932E8C2E23336F6A00DDC791 /* Assets.xcassets */,
-				932E8C3323336F6A00DDC791 /* LaunchScreen.storyboard */,
-				932E8C3623336F6A00DDC791 /* Info.plist */,
-				932E8C3023336F6A00DDC791 /* Preview Content */,
+				93ACE9CD2333715D00056902 /* SupportingFiles */,
 			);
 			path = FreeNow;
-			sourceTree = "<group>";
-		};
-		932E8C3023336F6A00DDC791 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				932E8C3123336F6A00DDC791 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		932E8C3E23336F6B00DDC791 /* FreeNowTests */ = {
@@ -120,6 +112,28 @@
 				932E8C4123336F6B00DDC791 /* Info.plist */,
 			);
 			path = FreeNowTests;
+			sourceTree = "<group>";
+		};
+		93ACE9CD2333715D00056902 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				93ACE9D12333728400056902 /* Foundation */,
+				93ACE9CE233371AD00056902 /* LaunchScreen.storyboard */,
+				932E8C2823336F6900DDC791 /* AppDelegate.swift */,
+				932E8C3623336F6A00DDC791 /* Info.plist */,
+				932E8C2E23336F6A00DDC791 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		93ACE9D12333728400056902 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				93ACE9D22333728400056902 /* Decodable+Utils.swift */,
+				93ACE9D32333728400056902 /* String+CarApp.swift */,
+				93ACE9D42333728400056902 /* Array+CarApp.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		ACE6055E086F9CD08AAB1F3F /* Pods */ = {
@@ -217,9 +231,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				932E8C3523336F6A00DDC791 /* LaunchScreen.storyboard in Resources */,
-				932E8C3223336F6A00DDC791 /* Preview Assets.xcassets in Resources */,
 				932E8C2F23336F6A00DDC791 /* Assets.xcassets in Resources */,
+				93ACE9D0233371AD00056902 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +315,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */,
+				93ACE9D62333728400056902 /* String+CarApp.swift in Sources */,
+				93ACE9D72333728400056902 /* Array+CarApp.swift in Sources */,
+				93ACE9D52333728400056902 /* Decodable+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,10 +340,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		932E8C3323336F6A00DDC791 /* LaunchScreen.storyboard */ = {
+		93ACE9CE233371AD00056902 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				932E8C3423336F6A00DDC791 /* Base */,
+				93ACE9CF233371AD00056902 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -455,9 +471,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"FreeNow/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FreeNow/Info.plist;
+				INFOPLIST_FILE = FreeNow/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,9 +491,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"FreeNow/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FreeNow/Info.plist;
+				INFOPLIST_FILE = FreeNow/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
