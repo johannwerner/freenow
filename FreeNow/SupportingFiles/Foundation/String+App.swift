@@ -6,7 +6,7 @@ extension String {
     func localizedString(_ comment: String = "") -> String {
         NSLocalizedString(
             self,
-            tableName: "CarAppLocalizable",
+            tableName: "FreeNow",
             value: "missing string",
             comment: comment
         )

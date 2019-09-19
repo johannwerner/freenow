@@ -1,0 +1,11 @@
+/* 
+  FreeNow.strings
+  FreeNow
+
+  Created by Johann Werner on 19.09.19.
+  Copyright © 2019 Johann Werner. All rights reserved.
+*/
+
+"introduction_primary_button" = "Start";
+
+"introduction_sub_title" = "iOS Code Challenge";

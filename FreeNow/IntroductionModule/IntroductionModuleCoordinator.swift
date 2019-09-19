@@ -42,4 +42,7 @@ extension  IntroductionModuleCoordinator {
 
 extension  IntroductionModuleCoordinator {
 
+    func showLocationList(models: NonEmpty<[IntroductionLocationModel]>, animated: Bool) {
+
+    }
 }

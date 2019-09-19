@@ -8,20 +8,14 @@ extension IntroductionModuleInteractorApi {
     // MARK: - Internal
     
     func getListOfLocations() -> Observable<Async<Any>> {
-        RxAlamofire
-            .requestJSON(
-                .get,
-                 url,
-                 parameters: nil
-            )
-            .flatMap { (response, json) -> Observable<Any> in
-                return Observable.just(json)
-            }.async()
-    }
-}
-
-private extension IntroductionModuleInteractorApi {
-    var url: String {
-        IntroductionConstants.locationsUrl
+    let bounds = [
+        ["latitude": 53.694865, "longitude": 9.757589],
+        ["latitude": 53.394655, "longitude": 10.099891],
+        ]
+       let dictionary: [String : Any] = [
+           "name": "Hamburg",
+           "bounds": bounds
+       ]
+       return Observable.just([dictionary]).async()
     }
 }

@@ -64,7 +64,7 @@ private extension  IntroductionModuleViewModel {
                     break
                 case .success(let listOfLocations):
                     self.viewEffect.accept(.success)
-
+                    self.coordinator.showLocationList(models: listOfLocations, animated: true)
                 }
             })
             .disposed(by: disposeBag)

@@ -2,7 +2,7 @@
 enum  IntroductionModuleStatus {
     case loading
     case error
-    case success([IntroductionLocationModel])
+    case success(NonEmptyArray<IntroductionLocationModel>)
 }
 
 /// View effect enum for  IntroductionModule.
@@ -18,9 +18,9 @@ enum  IntroductionModuleViewAction {
 
 struct IntroductionConstants {
     static let titleLabelText = "Johann Werner"
-    static let locationsUrl = "https://car2go.now.sh/locations"
 }
 
 struct IntroductionLocationModel: Codable {
     var name: String
+    var bounds: [Position]
 }
