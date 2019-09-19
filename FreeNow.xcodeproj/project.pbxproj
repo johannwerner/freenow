@@ -15,6 +15,15 @@
 		93ACE9D52333728400056902 /* Decodable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D22333728400056902 /* Decodable+Utils.swift */; };
 		93ACE9D62333728400056902 /* String+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D32333728400056902 /* String+App.swift */; };
 		93ACE9D72333728400056902 /* Array+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D42333728400056902 /* Array+App.swift */; };
+		93ACE9E32333737B00056902 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D92333737A00056902 /* Position.swift */; };
+		93ACE9E42333737B00056902 /* UIAplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9DA2333737A00056902 /* UIAplication+Window.swift */; };
+		93ACE9E52333737B00056902 /* NSObject+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9DB2333737A00056902 /* NSObject+App.swift */; };
+		93ACE9E62333737B00056902 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9DD2333737A00056902 /* CircleView.swift */; };
+		93ACE9E72333737B00056902 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9DE2333737A00056902 /* AppViewController.swift */; };
+		93ACE9E82333737B00056902 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9DF2333737A00056902 /* Async.swift */; };
+		93ACE9E92333737B00056902 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9E02333737A00056902 /* ColorTheme.swift */; };
+		93ACE9EA2333737B00056902 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9E12333737A00056902 /* ObservableType.swift */; };
+		93ACE9EB2333737B00056902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9E22333737A00056902 /* ViewController.swift */; };
 		F6B3A103761C67E01781FECF /* Pods_FreeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DACBBCEA4F82D22CA7CFCF /* Pods_FreeNow.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +54,15 @@
 		93ACE9D22333728400056902 /* Decodable+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decodable+Utils.swift"; sourceTree = "<group>"; };
 		93ACE9D32333728400056902 /* String+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+App.swift"; sourceTree = "<group>"; };
 		93ACE9D42333728400056902 /* Array+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+App.swift"; sourceTree = "<group>"; };
+		93ACE9D92333737A00056902 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		93ACE9DA2333737A00056902 /* UIAplication+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAplication+Window.swift"; sourceTree = "<group>"; };
+		93ACE9DB2333737A00056902 /* NSObject+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+App.swift"; sourceTree = "<group>"; };
+		93ACE9DD2333737A00056902 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		93ACE9DE2333737A00056902 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		93ACE9DF2333737A00056902 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		93ACE9E02333737A00056902 /* ColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		93ACE9E12333737A00056902 /* ObservableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
+		93ACE9E22333737A00056902 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E7D6BC90656871F39027299F /* Pods-FreeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.debug.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,7 +135,16 @@
 		93ACE9CD2333715D00056902 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				93ACE9D82333737A00056902 /* SharedModels */,
+				93ACE9DC2333737A00056902 /* SharedViews */,
 				93ACE9D12333728400056902 /* Foundation */,
+				93ACE9DE2333737A00056902 /* AppViewController.swift */,
+				93ACE9DF2333737A00056902 /* Async.swift */,
+				93ACE9E02333737A00056902 /* ColorTheme.swift */,
+				93ACE9DB2333737A00056902 /* NSObject+App.swift */,
+				93ACE9E12333737A00056902 /* ObservableType.swift */,
+				93ACE9DA2333737A00056902 /* UIAplication+Window.swift */,
+				93ACE9E22333737A00056902 /* ViewController.swift */,
 				93ACE9CE233371AD00056902 /* LaunchScreen.storyboard */,
 				932E8C2823336F6900DDC791 /* AppDelegate.swift */,
 				932E8C3623336F6A00DDC791 /* Info.plist */,
@@ -134,6 +161,22 @@
 				93ACE9D42333728400056902 /* Array+App.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		93ACE9D82333737A00056902 /* SharedModels */ = {
+			isa = PBXGroup;
+			children = (
+				93ACE9D92333737A00056902 /* Position.swift */,
+			);
+			path = SharedModels;
+			sourceTree = "<group>";
+		};
+		93ACE9DC2333737A00056902 /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				93ACE9DD2333737A00056902 /* CircleView.swift */,
+			);
+			path = SharedViews;
 			sourceTree = "<group>";
 		};
 		ACE6055E086F9CD08AAB1F3F /* Pods */ = {
@@ -314,9 +357,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93ACE9E62333737B00056902 /* CircleView.swift in Sources */,
 				932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */,
+				93ACE9E42333737B00056902 /* UIAplication+Window.swift in Sources */,
 				93ACE9D62333728400056902 /* String+App.swift in Sources */,
+				93ACE9E52333737B00056902 /* NSObject+App.swift in Sources */,
 				93ACE9D72333728400056902 /* Array+App.swift in Sources */,
+				93ACE9EA2333737B00056902 /* ObservableType.swift in Sources */,
+				93ACE9E72333737B00056902 /* AppViewController.swift in Sources */,
+				93ACE9EB2333737B00056902 /* ViewController.swift in Sources */,
+				93ACE9E32333737B00056902 /* Position.swift in Sources */,
+				93ACE9E82333737B00056902 /* Async.swift in Sources */,
+				93ACE9E92333737B00056902 /* ColorTheme.swift in Sources */,
 				93ACE9D52333728400056902 /* Decodable+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
