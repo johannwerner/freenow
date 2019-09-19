@@ -2,17 +2,18 @@
 enum MapListStatus {
     case loading
     case error
-    case success(MapCarModel)
+    case success(NonEmptyArray<Position>)
 }
 
 /// View effect enum for MapView.
 enum MapViewViewEffect {
-    case someEffect
+    case success
+    case loading
 }
 
 /// View action enum for MapView.
 enum MapViewViewAction {
-    case someAction
+    case primaryButtonPressed
 }
 
 struct MapConstants {

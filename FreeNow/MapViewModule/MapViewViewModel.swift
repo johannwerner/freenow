@@ -37,17 +37,54 @@ final class MapViewViewModel {
 
 extension MapViewViewModel {
     
-    func bind(to viewAction: PublishRelay<MapViewViewAction>) {}
+    func bind(to viewAction: PublishRelay<MapViewViewAction>) {
+        viewAction
+            .asObservable()
+            .subscribe(onNext: { [unowned self] viewAction in
+                switch viewAction {
+                case .primaryButtonPressed: break
+                    
+                }
+            })
+            .disposed(by: disposeBag)
+    }
 }
 
 // MARK: - Private functions
 
-private extension MapViewViewModel {}
+private extension MapViewViewModel {
+
+    func showCarList(position1: Position, position2: Position) {
+            useCase.getCarListForLocation(position1: position1, position2: position2)
+                 .subscribe(onNext: { [unowned self] status in
+                     switch status {
+                     case .loading:
+                        self.viewEffect.accept(.loading)
+                     case .error:
+                         break
+                     case .success(let positions):
+                        self.positions = positions
+                        self.viewEffect.accept(.success)
+                     }
+                 })
+                 .disposed(by: disposeBag)
+        }
+}
 
 // MARK: - Rx
 
 private extension MapViewViewModel {
     
     /// - Note: Privately observing view effects in the view model is meant to make the association between a specific effect and certain view states easier.
-    func observeViewEffect() {}
-}
+    func observeViewEffect() {
+            viewEffect
+                .asObservable()
+                .subscribe(onNext: { effect in
+                    switch effect {
+                    case .success: break
+                    case .loading: break
+                    }
+                })
+                .disposed(by: disposeBag)
+        }
+    }

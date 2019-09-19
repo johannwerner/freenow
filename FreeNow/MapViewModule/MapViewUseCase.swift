@@ -25,13 +25,22 @@ extension MapViewUseCase {
                     guard let model = MapCarModel.parse(from: data) else {
                         return .error
                     }
-                    guard model.poiList.isEmpty == false else {
+                    let positions = model.convert()
+                    guard let nonEmptyArray = positions.convertToNonEmptyArray() else {
                         return .error
                     }
-                    return .success(model)
+                    return .success(nonEmptyArray)
                 case .error:
                     return .error
                 }
+        }
+    }
+}
+
+private extension MapCarModel {
+    func convert() -> [Position] {
+        poiList.map { carModel -> Position in
+            carModel.coordinate
         }
     }
 }

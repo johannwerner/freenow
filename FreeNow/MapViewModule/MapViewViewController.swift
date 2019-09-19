@@ -14,6 +14,7 @@ final class MapViewViewController: UIViewController {
     
     // MARK: View components
     private let mapView: MKMapView
+    private let primaryButton = UIButton()
     
     // MARK: Tooling
     private let disposeBag = DisposeBag()
@@ -58,6 +59,27 @@ private extension MapViewViewController {
         view.addSubview(mapView)
         mapView.autoPinEdgesToSuperviewEdges()
         handlePins()
+        setUpPrimaryButton()
+    }
+    
+    func setUpPrimaryButton() {
+        view.addSubview(primaryButton)
+        primaryButton.autoAlignAxis(toSuperviewAxis: .vertical)
+        primaryButton.autoPinEdge(toSuperviewEdge: .bottom, withInset: 50)
+        primaryButton.autoSetDimension(.height, toSize: 50)
+        primaryButton.autoSetDimension(.width, toSize: 200, relation: .greaterThanOrEqual)
+        primaryButton.layer.cornerRadius = 4.0
+        
+        primaryButton.backgroundColor = ColorTheme.primaryAppColor
+        primaryButton.setTitle(
+            "map_vehicles_primary_button".localizedString(),
+            for: .normal
+        )
+        
+        primaryButton.rx.tap.subscribe(onNext: { [unowned self] _ in
+            self.viewAction.accept(.primaryButtonPressed)
+        })
+        .disposed(by: disposeBag)
     }
     
     func handlePins() {
@@ -112,8 +134,10 @@ private extension MapViewViewController {
             .viewEffect
             .subscribe(onNext: { effect in
                 switch effect {
-                case .someEffect:
-                    break 
+                case .success:
+                    break
+                case .loading:
+                    break
                 }
             })
             .disposed(by: disposeBag)

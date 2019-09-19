@@ -1,18 +1,18 @@
 /// Operation status enum for  IntroductionModule.
-enum  IntroductionModuleStatus {
+enum IntroductionModuleStatus {
     case loading
     case error
     case success(NonEmptyArray<IntroductionLocationModel>)
 }
 
 /// View effect enum for  IntroductionModule.
-enum  IntroductionModuleViewEffect {
+enum IntroductionModuleViewEffect {
     case success
     case loading
 }
 
 /// View action enum for  IntroductionModule.
-enum  IntroductionModuleViewAction {
+enum IntroductionModuleViewAction {
     case primaryButtonPressed
 }
 
