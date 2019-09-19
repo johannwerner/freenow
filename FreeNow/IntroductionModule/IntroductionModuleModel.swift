@@ -21,6 +21,7 @@ struct IntroductionConstants {
 }
 
 struct IntroductionLocationModel: Codable {
+    
     var name: String
     var bounds: [Position]
 }

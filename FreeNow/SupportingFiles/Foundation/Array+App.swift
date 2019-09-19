@@ -6,12 +6,12 @@ extension Array {
     }
 }
 
-//extension NonEmptyArray {
-//    public subscript(safe index: Index) -> Element? {
-//        indices.contains(index) ? self[index] : nil
-//    }
-//}
-//
+extension NonEmptyArray {
+    public subscript(safe index: Index) -> Element? {
+        indices.contains(index) ? self[index] : nil
+    }
+}
+
 extension Array {
     /// Converts array to NonEmptyArray
     /// Returns nil if array is empty

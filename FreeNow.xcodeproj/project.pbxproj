@@ -44,6 +44,17 @@
 		93ACEA292333760800056902 /* NonEmpty+RangeReplaceableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA1E2333760700056902 /* NonEmpty+RangeReplaceableCollection.swift */; };
 		93ACEA2A2333760800056902 /* NonEmpty+BidirectionalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA1F2333760700056902 /* NonEmpty+BidirectionalCollection.swift */; };
 		93ACEA2C233378BA00056902 /* FreeNow.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93ACEA2B233378BA00056902 /* FreeNow.strings */; };
+		93ACEA3B2333819200056902 /* LocationsListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA2E2333819200056902 /* LocationsListConfigurator.swift */; };
+		93ACEA3C2333819200056902 /* LocationsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA2F2333819200056902 /* LocationsListUseCase.swift */; };
+		93ACEA3D2333819200056902 /* LocationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA302333819200056902 /* LocationsListViewController.swift */; };
+		93ACEA3E2333819200056902 /* LocationsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA312333819200056902 /* LocationsListInteractor.swift */; };
+		93ACEA3F2333819200056902 /* LocationsListInteractorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA322333819200056902 /* LocationsListInteractorApi.swift */; };
+		93ACEA402333819200056902 /* LocationCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA342333819200056902 /* LocationCarModel.swift */; };
+		93ACEA412333819200056902 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA352333819200056902 /* LocationModel.swift */; };
+		93ACEA422333819200056902 /* LocationsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA362333819200056902 /* LocationsListCoordinator.swift */; };
+		93ACEA432333819200056902 /* LocationsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA372333819200056902 /* LocationsListViewModel.swift */; };
+		93ACEA442333819200056902 /* LocationsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA382333819200056902 /* LocationsListModel.swift */; };
+		93ACEA452333819200056902 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA3A2333819200056902 /* LocationTableViewCell.swift */; };
 		F6B3A103761C67E01781FECF /* Pods_FreeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DACBBCEA4F82D22CA7CFCF /* Pods_FreeNow.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +114,17 @@
 		93ACEA1E2333760700056902 /* NonEmpty+RangeReplaceableCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+RangeReplaceableCollection.swift"; sourceTree = "<group>"; };
 		93ACEA1F2333760700056902 /* NonEmpty+BidirectionalCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+BidirectionalCollection.swift"; sourceTree = "<group>"; };
 		93ACEA2B233378BA00056902 /* FreeNow.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = FreeNow.strings; sourceTree = "<group>"; };
+		93ACEA2E2333819200056902 /* LocationsListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListConfigurator.swift; sourceTree = "<group>"; };
+		93ACEA2F2333819200056902 /* LocationsListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListUseCase.swift; sourceTree = "<group>"; };
+		93ACEA302333819200056902 /* LocationsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListViewController.swift; sourceTree = "<group>"; };
+		93ACEA312333819200056902 /* LocationsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListInteractor.swift; sourceTree = "<group>"; };
+		93ACEA322333819200056902 /* LocationsListInteractorApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListInteractorApi.swift; sourceTree = "<group>"; };
+		93ACEA342333819200056902 /* LocationCarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCarModel.swift; sourceTree = "<group>"; };
+		93ACEA352333819200056902 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		93ACEA362333819200056902 /* LocationsListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListCoordinator.swift; sourceTree = "<group>"; };
+		93ACEA372333819200056902 /* LocationsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListViewModel.swift; sourceTree = "<group>"; };
+		93ACEA382333819200056902 /* LocationsListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListModel.swift; sourceTree = "<group>"; };
+		93ACEA3A2333819200056902 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		E7D6BC90656871F39027299F /* Pods-FreeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.debug.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +180,7 @@
 		932E8C2723336F6900DDC791 /* FreeNow */ = {
 			isa = PBXGroup;
 			children = (
+				93ACEA2D2333819200056902 /* LocationList */,
 				93ACE9EC2333744400056902 /* IntroductionModule */,
 				93ACE9CD2333715D00056902 /* SupportingFiles */,
 			);
@@ -253,6 +276,40 @@
 				93ACEA1F2333760700056902 /* NonEmpty+BidirectionalCollection.swift */,
 			);
 			path = NonEmpty;
+			sourceTree = "<group>";
+		};
+		93ACEA2D2333819200056902 /* LocationList */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA332333819200056902 /* Models */,
+				93ACEA2E2333819200056902 /* LocationsListConfigurator.swift */,
+				93ACEA2F2333819200056902 /* LocationsListUseCase.swift */,
+				93ACEA302333819200056902 /* LocationsListViewController.swift */,
+				93ACEA312333819200056902 /* LocationsListInteractor.swift */,
+				93ACEA322333819200056902 /* LocationsListInteractorApi.swift */,
+				93ACEA362333819200056902 /* LocationsListCoordinator.swift */,
+				93ACEA372333819200056902 /* LocationsListViewModel.swift */,
+				93ACEA382333819200056902 /* LocationsListModel.swift */,
+				93ACEA392333819200056902 /* ReusableViews */,
+			);
+			path = LocationList;
+			sourceTree = "<group>";
+		};
+		93ACEA332333819200056902 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA342333819200056902 /* LocationCarModel.swift */,
+				93ACEA352333819200056902 /* LocationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93ACEA392333819200056902 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA3A2333819200056902 /* LocationTableViewCell.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 		ACE6055E086F9CD08AAB1F3F /* Pods */ = {
@@ -439,21 +496,30 @@
 				93ACEA202333760800056902 /* NonEmpty+Dictionary.swift in Sources */,
 				93ACE9E62333737B00056902 /* CircleView.swift in Sources */,
 				93ACE9FB2333744400056902 /* IntroductionModuleCoordinator.swift in Sources */,
+				93ACEA422333819200056902 /* LocationsListCoordinator.swift in Sources */,
+				93ACEA432333819200056902 /* LocationsListViewModel.swift in Sources */,
 				932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */,
 				93ACE9F52333744400056902 /* IntroductionModuleViewController.swift in Sources */,
+				93ACEA402333819200056902 /* LocationCarModel.swift in Sources */,
 				93ACE9F62333744400056902 /* IntroductionModuleConfigurator.swift in Sources */,
+				93ACEA3B2333819200056902 /* LocationsListConfigurator.swift in Sources */,
+				93ACEA412333819200056902 /* LocationModel.swift in Sources */,
 				93ACE9E42333737B00056902 /* UIAplication+Window.swift in Sources */,
 				93ACE9D62333728400056902 /* String+App.swift in Sources */,
 				93ACE9E52333737B00056902 /* NSObject+App.swift in Sources */,
 				93ACEA2A2333760800056902 /* NonEmpty+BidirectionalCollection.swift in Sources */,
 				93ACE9D72333728400056902 /* Array+App.swift in Sources */,
+				93ACEA442333819200056902 /* LocationsListModel.swift in Sources */,
+				93ACEA3D2333819200056902 /* LocationsListViewController.swift in Sources */,
 				93ACE9EA2333737B00056902 /* ObservableType.swift in Sources */,
 				93ACEA282333760800056902 /* NonEmpty.swift in Sources */,
 				93ACEA262333760800056902 /* NonEmpty+Collection.swift in Sources */,
 				93ACE9E72333737B00056902 /* AppViewController.swift in Sources */,
+				93ACEA3E2333819200056902 /* LocationsListInteractor.swift in Sources */,
 				93ACE9FA2333744400056902 /* IntroductionModuleUseCase.swift in Sources */,
 				93ACEA242333760800056902 /* NonEmpty+String.swift in Sources */,
 				93ACEA222333760800056902 /* NonEmpty+Random.swift in Sources */,
+				93ACEA3F2333819200056902 /* LocationsListInteractorApi.swift in Sources */,
 				93ACE9EB2333737B00056902 /* ViewController.swift in Sources */,
 				93ACEA292333760800056902 /* NonEmpty+RangeReplaceableCollection.swift in Sources */,
 				93ACEA212333760800056902 /* NonEmpty+SetAlgebra.swift in Sources */,
@@ -461,8 +527,10 @@
 				93ACE9E32333737B00056902 /* Position.swift in Sources */,
 				93ACE9FC2333744400056902 /* IntroductionModuleInteractor.swift in Sources */,
 				93ACE9E82333737B00056902 /* Async.swift in Sources */,
+				93ACEA3C2333819200056902 /* LocationsListUseCase.swift in Sources */,
 				93ACEA272333760800056902 /* NonEmpty+Array.swift in Sources */,
 				93ACE9F82333744400056902 /* IntroductionModuleModel.swift in Sources */,
+				93ACEA452333819200056902 /* LocationTableViewCell.swift in Sources */,
 				93ACE9F92333744400056902 /* IntroductionModuleInteractorApi.swift in Sources */,
 				93ACE9E92333737B00056902 /* ColorTheme.swift in Sources */,
 				93ACE9D52333728400056902 /* Decodable+Utils.swift in Sources */,
