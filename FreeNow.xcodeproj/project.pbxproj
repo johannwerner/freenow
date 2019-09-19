@@ -65,6 +65,14 @@
 		93ACEA5A2333A4C100056902 /* CarListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA4F2333A4C000056902 /* CarListConfigurator.swift */; };
 		93ACEA5B2333A4C100056902 /* CarListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA502333A4C000056902 /* CarListUseCase.swift */; };
 		93ACEA5C2333A4C100056902 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA522333A4C000056902 /* CarTableViewCell.swift */; };
+		93ACEA662333AECB00056902 /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA5E2333AECB00056902 /* MapViewViewController.swift */; };
+		93ACEA672333AECB00056902 /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA5F2333AECB00056902 /* MapViewViewModel.swift */; };
+		93ACEA682333AECB00056902 /* MapViewInteractorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA602333AECB00056902 /* MapViewInteractorApi.swift */; };
+		93ACEA692333AECB00056902 /* MapViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA612333AECB00056902 /* MapViewInteractor.swift */; };
+		93ACEA6A2333AECB00056902 /* MapViewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA622333AECB00056902 /* MapViewUseCase.swift */; };
+		93ACEA6B2333AECB00056902 /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA632333AECB00056902 /* MapViewCoordinator.swift */; };
+		93ACEA6C2333AECB00056902 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA642333AECB00056902 /* MapViewModel.swift */; };
+		93ACEA6D2333AECB00056902 /* MapViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA652333AECB00056902 /* MapViewConfigurator.swift */; };
 		F6B3A103761C67E01781FECF /* Pods_FreeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DACBBCEA4F82D22CA7CFCF /* Pods_FreeNow.framework */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +153,14 @@
 		93ACEA4F2333A4C000056902 /* CarListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListConfigurator.swift; sourceTree = "<group>"; };
 		93ACEA502333A4C000056902 /* CarListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListUseCase.swift; sourceTree = "<group>"; };
 		93ACEA522333A4C000056902 /* CarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		93ACEA5E2333AECB00056902 /* MapViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
+		93ACEA5F2333AECB00056902 /* MapViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewViewModel.swift; sourceTree = "<group>"; };
+		93ACEA602333AECB00056902 /* MapViewInteractorApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewInteractorApi.swift; sourceTree = "<group>"; };
+		93ACEA612333AECB00056902 /* MapViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewInteractor.swift; sourceTree = "<group>"; };
+		93ACEA622333AECB00056902 /* MapViewUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewUseCase.swift; sourceTree = "<group>"; };
+		93ACEA632333AECB00056902 /* MapViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
+		93ACEA642333AECB00056902 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		93ACEA652333AECB00056902 /* MapViewConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewConfigurator.swift; sourceTree = "<group>"; };
 		E7D6BC90656871F39027299F /* Pods-FreeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.debug.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +219,7 @@
 				93ACEA462333A4C000056902 /* CarListModule */,
 				93ACEA2D2333819200056902 /* LocationList */,
 				93ACE9EC2333744400056902 /* IntroductionModule */,
+				93ACEA5D2333AECB00056902 /* MapViewModule */,
 				93ACE9CD2333715D00056902 /* SupportingFiles */,
 			);
 			path = FreeNow;
@@ -364,6 +381,21 @@
 				93ACEA522333A4C000056902 /* CarTableViewCell.swift */,
 			);
 			path = ResubleViews;
+			sourceTree = "<group>";
+		};
+		93ACEA5D2333AECB00056902 /* MapViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA5E2333AECB00056902 /* MapViewViewController.swift */,
+				93ACEA5F2333AECB00056902 /* MapViewViewModel.swift */,
+				93ACEA602333AECB00056902 /* MapViewInteractorApi.swift */,
+				93ACEA612333AECB00056902 /* MapViewInteractor.swift */,
+				93ACEA622333AECB00056902 /* MapViewUseCase.swift */,
+				93ACEA632333AECB00056902 /* MapViewCoordinator.swift */,
+				93ACEA642333AECB00056902 /* MapViewModel.swift */,
+				93ACEA652333AECB00056902 /* MapViewConfigurator.swift */,
+			);
+			path = MapViewModule;
 			sourceTree = "<group>";
 		};
 		ACE6055E086F9CD08AAB1F3F /* Pods */ = {
@@ -545,6 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93ACEA662333AECB00056902 /* MapViewViewController.swift in Sources */,
 				93ACEA252333760800056902 /* NonEmpty+Comparable.swift in Sources */,
 				93ACE9F72333744400056902 /* IntroductionModuleViewModel.swift in Sources */,
 				93ACEA202333760800056902 /* NonEmpty+Dictionary.swift in Sources */,
@@ -555,30 +588,36 @@
 				932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */,
 				93ACE9F52333744400056902 /* IntroductionModuleViewController.swift in Sources */,
 				93ACEA402333819200056902 /* LocationCarModel.swift in Sources */,
+				93ACEA6C2333AECB00056902 /* MapViewModel.swift in Sources */,
 				93ACEA5B2333A4C100056902 /* CarListUseCase.swift in Sources */,
 				93ACE9F62333744400056902 /* IntroductionModuleConfigurator.swift in Sources */,
+				93ACEA6A2333AECB00056902 /* MapViewUseCase.swift in Sources */,
 				93ACEA3B2333819200056902 /* LocationsListConfigurator.swift in Sources */,
 				93ACEA412333819200056902 /* LocationModel.swift in Sources */,
 				93ACE9E42333737B00056902 /* UIAplication+Window.swift in Sources */,
 				93ACE9D62333728400056902 /* String+App.swift in Sources */,
 				93ACEA532333A4C100056902 /* CarListInteractor.swift in Sources */,
 				93ACE9E52333737B00056902 /* NSObject+App.swift in Sources */,
+				93ACEA682333AECB00056902 /* MapViewInteractorApi.swift in Sources */,
 				93ACEA5A2333A4C100056902 /* CarListConfigurator.swift in Sources */,
 				93ACEA5C2333A4C100056902 /* CarTableViewCell.swift in Sources */,
 				93ACEA2A2333760800056902 /* NonEmpty+BidirectionalCollection.swift in Sources */,
 				93ACE9D72333728400056902 /* Array+App.swift in Sources */,
 				93ACEA442333819200056902 /* LocationsListModel.swift in Sources */,
 				93ACEA592333A4C100056902 /* CarListModel.swift in Sources */,
+				93ACEA6B2333AECB00056902 /* MapViewCoordinator.swift in Sources */,
 				93ACEA3D2333819200056902 /* LocationsListViewController.swift in Sources */,
 				93ACE9EA2333737B00056902 /* ObservableType.swift in Sources */,
 				93ACEA282333760800056902 /* NonEmpty.swift in Sources */,
 				93ACEA262333760800056902 /* NonEmpty+Collection.swift in Sources */,
 				93ACE9E72333737B00056902 /* AppViewController.swift in Sources */,
+				93ACEA692333AECB00056902 /* MapViewInteractor.swift in Sources */,
 				93ACEA3E2333819200056902 /* LocationsListInteractor.swift in Sources */,
 				93ACE9FA2333744400056902 /* IntroductionModuleUseCase.swift in Sources */,
 				93ACEA242333760800056902 /* NonEmpty+String.swift in Sources */,
 				93ACEA222333760800056902 /* NonEmpty+Random.swift in Sources */,
 				93ACEA562333A4C100056902 /* CarListCoordinator.swift in Sources */,
+				93ACEA672333AECB00056902 /* MapViewViewModel.swift in Sources */,
 				93ACEA3F2333819200056902 /* LocationsListInteractorApi.swift in Sources */,
 				93ACE9EB2333737B00056902 /* ViewController.swift in Sources */,
 				93ACEA572333A4C100056902 /* CarModel.swift in Sources */,
@@ -596,6 +635,7 @@
 				93ACEA452333819200056902 /* LocationTableViewCell.swift in Sources */,
 				93ACE9F92333744400056902 /* IntroductionModuleInteractorApi.swift in Sources */,
 				93ACEA552333A4C100056902 /* CarListViewController.swift in Sources */,
+				93ACEA6D2333AECB00056902 /* MapViewConfigurator.swift in Sources */,
 				93ACE9E92333737B00056902 /* ColorTheme.swift in Sources */,
 				93ACE9D52333728400056902 /* Decodable+Utils.swift in Sources */,
 			);

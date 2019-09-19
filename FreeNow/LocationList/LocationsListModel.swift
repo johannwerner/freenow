@@ -20,5 +20,5 @@ enum LocationsListViewAction {
 }
 
 struct LocationListConstants {
-    static let carListUrl = "https://fake-poi-api.mytaxi.com/?p2Lat=%d&p1Lon=%d&p1Lat=%d&p2Lon=%d"
+    static let carListUrl = "https://fake-poi-api.mytaxi.com/?p1Lat=%f&p1Lon=%f&p2Lat=%f&p2Lon=%f"
 }

@@ -52,12 +52,33 @@ extension CarListCoordinator {
 extension CarListCoordinator {
     func showMapView(
         position: Position,
+        model: CarListModel,
         animated: Bool
         ) {
-
+        mapViewcoordinator.showMapView(
+            position: position,
+            allPositions: model.convert(),
+            animated: animated
+        )
     }
 }
 
 private extension CarListCoordinator {
+    var mapViewConfigurator: MapViewConfigurator { MapViewConfigurator(mapViewInteractor: MapViewInteractorApi())
+    }
+    
+    var mapViewcoordinator: MapViewCoordinator {
+        MapViewCoordinator(
+          navigationController: navigationController,
+          configurator: mapViewConfigurator
+      )
+    }
+}
 
+private extension CarListModel {
+    func convert() -> [Position] {
+        carModels.map { carModel -> Position in
+            carModel.position
+        }
+    }
 }

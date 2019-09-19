@@ -64,6 +64,7 @@ extension CarListViewModel {
                     let model = self.modelForIndexPath(index: index)
                     self.coordinator.showMapView(
                         position: model.position,
+                        model: self.model,
                         animated: true
                     )
                 }
