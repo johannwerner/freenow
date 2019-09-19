@@ -6,6 +6,12 @@
   Copyright © 2019 Johann Werner. All rights reserved.
 */
 
+"car_list_item_title" = "Vehicle";
+
+"car_list_item_tank_empty" = "Tank is empty";
+
+"car_list_item_tank_status" = "Fuel is %.0f%% Full";
+
 "introduction_primary_button" = "Start";
 
 "introduction_sub_title" = "iOS Code Challenge";

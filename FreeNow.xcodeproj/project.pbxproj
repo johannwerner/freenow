@@ -55,6 +55,16 @@
 		93ACEA432333819200056902 /* LocationsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA372333819200056902 /* LocationsListViewModel.swift */; };
 		93ACEA442333819200056902 /* LocationsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA382333819200056902 /* LocationsListModel.swift */; };
 		93ACEA452333819200056902 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA3A2333819200056902 /* LocationTableViewCell.swift */; };
+		93ACEA532333A4C100056902 /* CarListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA472333A4C000056902 /* CarListInteractor.swift */; };
+		93ACEA542333A4C100056902 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA482333A4C000056902 /* CarListViewModel.swift */; };
+		93ACEA552333A4C100056902 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA492333A4C000056902 /* CarListViewController.swift */; };
+		93ACEA562333A4C100056902 /* CarListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA4A2333A4C000056902 /* CarListCoordinator.swift */; };
+		93ACEA572333A4C100056902 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA4C2333A4C000056902 /* CarModel.swift */; };
+		93ACEA582333A4C100056902 /* CarListInteractorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA4D2333A4C000056902 /* CarListInteractorApi.swift */; };
+		93ACEA592333A4C100056902 /* CarListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA4E2333A4C000056902 /* CarListModel.swift */; };
+		93ACEA5A2333A4C100056902 /* CarListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA4F2333A4C000056902 /* CarListConfigurator.swift */; };
+		93ACEA5B2333A4C100056902 /* CarListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA502333A4C000056902 /* CarListUseCase.swift */; };
+		93ACEA5C2333A4C100056902 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA522333A4C000056902 /* CarTableViewCell.swift */; };
 		F6B3A103761C67E01781FECF /* Pods_FreeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DACBBCEA4F82D22CA7CFCF /* Pods_FreeNow.framework */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +135,16 @@
 		93ACEA372333819200056902 /* LocationsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListViewModel.swift; sourceTree = "<group>"; };
 		93ACEA382333819200056902 /* LocationsListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListModel.swift; sourceTree = "<group>"; };
 		93ACEA3A2333819200056902 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		93ACEA472333A4C000056902 /* CarListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListInteractor.swift; sourceTree = "<group>"; };
+		93ACEA482333A4C000056902 /* CarListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		93ACEA492333A4C000056902 /* CarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		93ACEA4A2333A4C000056902 /* CarListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListCoordinator.swift; sourceTree = "<group>"; };
+		93ACEA4C2333A4C000056902 /* CarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		93ACEA4D2333A4C000056902 /* CarListInteractorApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListInteractorApi.swift; sourceTree = "<group>"; };
+		93ACEA4E2333A4C000056902 /* CarListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListModel.swift; sourceTree = "<group>"; };
+		93ACEA4F2333A4C000056902 /* CarListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListConfigurator.swift; sourceTree = "<group>"; };
+		93ACEA502333A4C000056902 /* CarListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListUseCase.swift; sourceTree = "<group>"; };
+		93ACEA522333A4C000056902 /* CarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
 		E7D6BC90656871F39027299F /* Pods-FreeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.debug.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +200,7 @@
 		932E8C2723336F6900DDC791 /* FreeNow */ = {
 			isa = PBXGroup;
 			children = (
+				93ACEA462333A4C000056902 /* CarListModule */,
 				93ACEA2D2333819200056902 /* LocationList */,
 				93ACE9EC2333744400056902 /* IntroductionModule */,
 				93ACE9CD2333715D00056902 /* SupportingFiles */,
@@ -310,6 +331,39 @@
 				93ACEA3A2333819200056902 /* LocationTableViewCell.swift */,
 			);
 			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		93ACEA462333A4C000056902 /* CarListModule */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA4B2333A4C000056902 /* Models */,
+				93ACEA472333A4C000056902 /* CarListInteractor.swift */,
+				93ACEA482333A4C000056902 /* CarListViewModel.swift */,
+				93ACEA492333A4C000056902 /* CarListViewController.swift */,
+				93ACEA4A2333A4C000056902 /* CarListCoordinator.swift */,
+				93ACEA4D2333A4C000056902 /* CarListInteractorApi.swift */,
+				93ACEA4E2333A4C000056902 /* CarListModel.swift */,
+				93ACEA4F2333A4C000056902 /* CarListConfigurator.swift */,
+				93ACEA502333A4C000056902 /* CarListUseCase.swift */,
+				93ACEA512333A4C000056902 /* ResubleViews */,
+			);
+			path = CarListModule;
+			sourceTree = "<group>";
+		};
+		93ACEA4B2333A4C000056902 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA4C2333A4C000056902 /* CarModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93ACEA512333A4C000056902 /* ResubleViews */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA522333A4C000056902 /* CarTableViewCell.swift */,
+			);
+			path = ResubleViews;
 			sourceTree = "<group>";
 		};
 		ACE6055E086F9CD08AAB1F3F /* Pods */ = {
@@ -501,15 +555,20 @@
 				932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */,
 				93ACE9F52333744400056902 /* IntroductionModuleViewController.swift in Sources */,
 				93ACEA402333819200056902 /* LocationCarModel.swift in Sources */,
+				93ACEA5B2333A4C100056902 /* CarListUseCase.swift in Sources */,
 				93ACE9F62333744400056902 /* IntroductionModuleConfigurator.swift in Sources */,
 				93ACEA3B2333819200056902 /* LocationsListConfigurator.swift in Sources */,
 				93ACEA412333819200056902 /* LocationModel.swift in Sources */,
 				93ACE9E42333737B00056902 /* UIAplication+Window.swift in Sources */,
 				93ACE9D62333728400056902 /* String+App.swift in Sources */,
+				93ACEA532333A4C100056902 /* CarListInteractor.swift in Sources */,
 				93ACE9E52333737B00056902 /* NSObject+App.swift in Sources */,
+				93ACEA5A2333A4C100056902 /* CarListConfigurator.swift in Sources */,
+				93ACEA5C2333A4C100056902 /* CarTableViewCell.swift in Sources */,
 				93ACEA2A2333760800056902 /* NonEmpty+BidirectionalCollection.swift in Sources */,
 				93ACE9D72333728400056902 /* Array+App.swift in Sources */,
 				93ACEA442333819200056902 /* LocationsListModel.swift in Sources */,
+				93ACEA592333A4C100056902 /* CarListModel.swift in Sources */,
 				93ACEA3D2333819200056902 /* LocationsListViewController.swift in Sources */,
 				93ACE9EA2333737B00056902 /* ObservableType.swift in Sources */,
 				93ACEA282333760800056902 /* NonEmpty.swift in Sources */,
@@ -519,19 +578,24 @@
 				93ACE9FA2333744400056902 /* IntroductionModuleUseCase.swift in Sources */,
 				93ACEA242333760800056902 /* NonEmpty+String.swift in Sources */,
 				93ACEA222333760800056902 /* NonEmpty+Random.swift in Sources */,
+				93ACEA562333A4C100056902 /* CarListCoordinator.swift in Sources */,
 				93ACEA3F2333819200056902 /* LocationsListInteractorApi.swift in Sources */,
 				93ACE9EB2333737B00056902 /* ViewController.swift in Sources */,
+				93ACEA572333A4C100056902 /* CarModel.swift in Sources */,
 				93ACEA292333760800056902 /* NonEmpty+RangeReplaceableCollection.swift in Sources */,
 				93ACEA212333760800056902 /* NonEmpty+SetAlgebra.swift in Sources */,
 				93ACEA232333760800056902 /* NonEmpty+MutableCollection.swift in Sources */,
 				93ACE9E32333737B00056902 /* Position.swift in Sources */,
+				93ACEA542333A4C100056902 /* CarListViewModel.swift in Sources */,
 				93ACE9FC2333744400056902 /* IntroductionModuleInteractor.swift in Sources */,
+				93ACEA582333A4C100056902 /* CarListInteractorApi.swift in Sources */,
 				93ACE9E82333737B00056902 /* Async.swift in Sources */,
 				93ACEA3C2333819200056902 /* LocationsListUseCase.swift in Sources */,
 				93ACEA272333760800056902 /* NonEmpty+Array.swift in Sources */,
 				93ACE9F82333744400056902 /* IntroductionModuleModel.swift in Sources */,
 				93ACEA452333819200056902 /* LocationTableViewCell.swift in Sources */,
 				93ACE9F92333744400056902 /* IntroductionModuleInteractorApi.swift in Sources */,
+				93ACEA552333A4C100056902 /* CarListViewController.swift in Sources */,
 				93ACE9E92333737B00056902 /* ColorTheme.swift in Sources */,
 				93ACE9D52333728400056902 /* Decodable+Utils.swift in Sources */,
 			);

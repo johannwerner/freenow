@@ -41,4 +41,58 @@ extension LocationsListCoordinator {
 // MARK: - Navigation OUT
 
 extension LocationsListCoordinator {
+
+    func showCarList(
+        model: LocationCarModel,
+        locationModel: LocationModel,
+        animated: Bool
+    ) {
+        guard let nonEmptyArray = model.poiList.convert().convertToNonEmptyArray()
+            else {
+            assertionFailure("array is empty")
+            return
+        }
+        
+        carListCoordinator.showCarList(
+            models: nonEmptyArray,
+            locationName: locationModel.name,
+            animated: animated
+        )
+    }
+}
+
+// MARK: - Navigation To CarList
+private extension LocationsListCoordinator {
+    var carListConfigurator: CarListConfigurator {
+        CarListConfigurator(carListInteractor: CarListInteractorApi())
+    }
+    
+    var carListCoordinator: CarListCoordinator {
+        CarListCoordinator(
+            navigationController: navigationController,
+            configurator: carListConfigurator
+        )
+    }
+}
+
+// MARK: - Convert
+private extension Array where Iterator.Element == LocationCarModel.PointOfInterest {
+    func convert() -> [CarModel] {
+        map { model -> CarModel in
+            CarModel(locationCarModel: model)
+        }
+    }
+}
+
+// MARK: - CarModel
+private extension CarModel {
+    init(locationCarModel: LocationCarModel.PointOfInterest) {
+        self = CarModel(
+            numberPlate: locationCarModel.numberPlate,
+            id: locationCarModel.id,
+            model: locationCarModel.model,
+            fuel: locationCarModel.fuel,
+            position: locationCarModel.coordinate
+        )
+    }
 }

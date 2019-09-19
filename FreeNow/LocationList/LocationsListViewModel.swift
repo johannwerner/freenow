@@ -68,25 +68,22 @@ extension LocationsListViewModel {
 private extension LocationsListViewModel {
 
     func showCarList(locationModel: LocationModel) {
-        useCase.getCarListForLocation(location: locationModel.name)
+        useCase.getCarListForLocation(locationModel: locationModel)
              .subscribe(onNext: { [unowned self] status in
                  switch status {
                  case .loading:
                     self.viewEffect.accept(.loading)
                  case .error:
                      break
-                 case .success(let listOfCars):
+                 case .success(let model):
                     self.viewEffect.accept(.success)
-//                    self.coordinator.showCarList(
-//                        models: listOfCars,
-//                        locationModel: locationModel,
-//                        animated: true
-//                    )
+                    self.coordinator.showCarList(model: model, locationModel: locationModel, animated: true)
                  }
              })
              .disposed(by: disposeBag)
     }
 }
+
 
 // MARK: - Rx
 

@@ -16,11 +16,11 @@ final class LocationsListInteractorApi: LocationsListInteractor {
 extension LocationsListInteractorApi {
     // MARK: - Internal
     
-    func getListOfCarsForLocation(location: String) -> Observable<Async<Any>> {
+    func getListOfCarsForLocation(position1: Position, position2: Position) -> Observable<Async<Any>> {
         RxAlamofire
             .requestJSON(
                 .get,
-                 url(location: location),
+                 url(position1: position1, position2: position2),
                  parameters: nil
             )
             .flatMap { (response, json) -> Observable<Any> in
@@ -30,8 +30,8 @@ extension LocationsListInteractorApi {
 }
 
 private extension LocationsListInteractorApi {
-    func url(location: String) -> String {
-        String(format: LocationListConstants.carListUrl, location)
+    func url(position1: Position, position2: Position) -> String {
+        String(format: LocationListConstants.carListUrl, position1.latitude, position1.longitude, position2.latitude, position2.longitude)
     }
 }
 
