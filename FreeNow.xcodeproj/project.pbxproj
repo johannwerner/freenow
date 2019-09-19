@@ -13,8 +13,8 @@
 		932E8C4023336F6B00DDC791 /* FreeNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */; };
 		93ACE9D0233371AD00056902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93ACE9CE233371AD00056902 /* LaunchScreen.storyboard */; };
 		93ACE9D52333728400056902 /* Decodable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D22333728400056902 /* Decodable+Utils.swift */; };
-		93ACE9D62333728400056902 /* String+CarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D32333728400056902 /* String+CarApp.swift */; };
-		93ACE9D72333728400056902 /* Array+CarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D42333728400056902 /* Array+CarApp.swift */; };
+		93ACE9D62333728400056902 /* String+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D32333728400056902 /* String+App.swift */; };
+		93ACE9D72333728400056902 /* Array+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D42333728400056902 /* Array+App.swift */; };
 		F6B3A103761C67E01781FECF /* Pods_FreeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DACBBCEA4F82D22CA7CFCF /* Pods_FreeNow.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +43,8 @@
 		932E8C4123336F6B00DDC791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93ACE9CF233371AD00056902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93ACE9D22333728400056902 /* Decodable+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decodable+Utils.swift"; sourceTree = "<group>"; };
-		93ACE9D32333728400056902 /* String+CarApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CarApp.swift"; sourceTree = "<group>"; };
-		93ACE9D42333728400056902 /* Array+CarApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+CarApp.swift"; sourceTree = "<group>"; };
+		93ACE9D32333728400056902 /* String+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+App.swift"; sourceTree = "<group>"; };
+		93ACE9D42333728400056902 /* Array+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+App.swift"; sourceTree = "<group>"; };
 		E7D6BC90656871F39027299F /* Pods-FreeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.debug.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,8 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				93ACE9D22333728400056902 /* Decodable+Utils.swift */,
-				93ACE9D32333728400056902 /* String+CarApp.swift */,
-				93ACE9D42333728400056902 /* Array+CarApp.swift */,
+				93ACE9D32333728400056902 /* String+App.swift */,
+				93ACE9D42333728400056902 /* Array+App.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -315,8 +315,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */,
-				93ACE9D62333728400056902 /* String+CarApp.swift in Sources */,
-				93ACE9D72333728400056902 /* Array+CarApp.swift in Sources */,
+				93ACE9D62333728400056902 /* String+App.swift in Sources */,
+				93ACE9D72333728400056902 /* Array+App.swift in Sources */,
 				93ACE9D52333728400056902 /* Decodable+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
