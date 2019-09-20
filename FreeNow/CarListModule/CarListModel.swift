@@ -17,7 +17,7 @@ enum CarListViewAction {
     case selectedIndex(atIndex: Int)
 }
 
-struct CLMLComments {
+struct CLComments {
     static let vehicleCellTitle = "Title of vehicle information in a list of vehicles."
 }
 

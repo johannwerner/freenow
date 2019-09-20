@@ -102,10 +102,7 @@ extension LocationsListViewController: UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: LocationTableViewCell.className, for: indexPath)
-        guard let locationCell = cell as? LocationTableViewCell else {
-            assertionFailure("cell is nil")
-            return cell
-        }
+        let locationCell = cell as! LocationTableViewCell
         let locationModel = viewModel.modelForIndex(index: indexPath.row)
         locationCell.fill(with: locationModel)
         return locationCell

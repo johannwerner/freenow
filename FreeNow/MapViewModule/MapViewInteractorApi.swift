@@ -22,14 +22,18 @@ extension MapViewInteractorApi {
                  parameters: nil
             )
             .flatMap { (response, json) -> Observable<Any> in
-                return Observable.just(json)
+                Observable.just(json)
             }.async()
     }
 }
 
 private extension MapViewInteractorApi {
     func url(position1: Position, position2: Position) -> String {
-        String(format: MapConstants.carListUrl, position1.latitude, position1.longitude, position2.latitude, position2.longitude)
+        String(
+            format: MapConstants.carListUrl,
+            position1.latitude, position1.longitude,
+            position2.latitude, position2.longitude
+        )
     }
 }
 

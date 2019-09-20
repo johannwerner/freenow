@@ -30,12 +30,15 @@ private extension LocationTableViewCell {
     func setUpViews() {
         accessoryType = .disclosureIndicator
         contentView.addSubview(locationNameLabel)
-        let locationNameEdgeInsets = UIEdgeInsets(
+        locationNameLabel.autoPinEdgesToSuperviewEdges(with: locationNameEdgeInsets)
+    }
+    
+    var locationNameEdgeInsets: UIEdgeInsets {
+        UIEdgeInsets(
             top: 20,
             left: 10,
             bottom: 20,
             right: 10
         )
-        locationNameLabel.autoPinEdgesToSuperviewEdges(with: locationNameEdgeInsets)
     }
 }

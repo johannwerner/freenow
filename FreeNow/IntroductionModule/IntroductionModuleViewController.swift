@@ -3,7 +3,7 @@ import RxCocoa
 
 /// An introduction to my coding challenge
 /// - Requires: `RxSwift`, `RxCocoa`
-final class IntroductionModuleViewController: AppViewController {
+final class IntroductionModuleViewController: UIViewController {
     
     // MARK: Dependencies
     private let viewModel: IntroductionModuleViewModel
@@ -120,7 +120,6 @@ private extension  IntroductionModuleViewController {
             "",
             for: .normal
         )
-        activityView.showView()
     }
     
     func stopLoadingAnimations() {
@@ -129,7 +128,6 @@ private extension  IntroductionModuleViewController {
             "introduction_primary_button".localizedString(),
             for: .normal
         )
-        activityView.hideView()
     }
 }
 

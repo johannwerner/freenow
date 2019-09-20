@@ -18,7 +18,7 @@ final class LocationsListUseCase {
 
 extension LocationsListUseCase {
     func getCarListForLocation(locationModel: LocationModel) -> Observable<LocationsListStatus> {
-        guard let positionTuple = getMeTwoPositions(locationModel: locationModel) else {
+        guard let positionTuple = getTwoPositionsFromLocation(locationModel: locationModel) else {
             assertionFailure("Bounds array did not contain 2 or more elements")
             return Observable.just(LocationsListStatus.error)
         }
@@ -43,13 +43,11 @@ extension LocationsListUseCase {
 }
 
 private extension LocationsListUseCase {
-    func getMeTwoPositions(locationModel: LocationModel) -> (Position, Position)? {
+    func getTwoPositionsFromLocation(locationModel: LocationModel) -> (Position, Position)? {
         guard let position1 = locationModel.bounds.first else {
-            assertionFailure("Bounds array is empty")
             return nil
         }
         guard let position2 = locationModel.bounds[safe: .tail(0)] else {
-            assertionFailure("Bounds array only has one element")
             return nil
         }
         return (position1, position2)

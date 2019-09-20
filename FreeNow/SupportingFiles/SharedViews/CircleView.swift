@@ -16,6 +16,7 @@ final class CircleView: UIView {
         makeViewRound(size: frame.size)
     }
 
+    // MARK: - Override
     @discardableResult
     override func autoSetDimensions(to size: CGSize) -> [NSLayoutConstraint] {
         makeViewRound(size: size)

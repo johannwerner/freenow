@@ -29,6 +29,10 @@ extension ColorTheme {
     static var black: UIColor {
         .black
     }
+    
+    static var white: UIColor {
+        .white
+    }
 }
 
 // MARK: - Private Methods

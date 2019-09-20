@@ -45,6 +45,7 @@ private extension Array where Iterator.Element == Dictionary<String, Any> {
                 return nil
             }
             guard model.bounds.count > 1 else {
+                assertionFailure("bounds requires at least two positions")
                 return nil
             }
             return model

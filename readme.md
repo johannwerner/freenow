@@ -7,10 +7,13 @@ In this architecture are also use cases which is where the business logic lives.
 I used a protocol for the network interactors so that I can create test interactors that subscribe to the protocol and inject the test interactors into the use case for testing purposes.
 The View in the MVVM architecture sends all user events to the view model. The view model then takes appropriate action which could include calling a use case. The use case could fetch data from the network or a local database and then the view model sends any update to the view model.
 Every module needs to have a view, view model, model, interactor and coordinator. Even when these are not necessary for smaller modules it is good to set it up in case the smaller modules need it in the future. The MapModule serves as an example here.
+Data required for a screen is loaded from the previous module before the screen is shown to ensure that values can be non nil. The idea is that if there is an error that an error view is shown instead and not the intended screen. 
+
+NonEmpty (https://github.com/pointfreeco/swift-nonempty) is a library for non empty collections (arrays, dictionaries, strings ect) and was used in this project as an experiment working with arrays that can't be empty.
+The library was added via cocoapods but contained an error abort 6. Therefore was removed from the podfile and added by dragging the files into the project and this resolved the issue. Further investigation why this error is happening is still required.
 
 - The design will be improved once collaboration over designs is done.
 - Tests need be improved to handle "RxSwift subscribe" better.
 - Initialize components in init rather than var.
-- Not use the non-nil exclamation mark (!) for components to ensure they are not nil.
 - A decision was made to not handle errors in this version due to time constraints. The architecture is set up well to handle this in the future.
 - A decision was made to use one localized string file rather than multiple localised strings per module.

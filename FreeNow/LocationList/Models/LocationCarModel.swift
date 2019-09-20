@@ -1,7 +1,11 @@
 import Foundation
 
 struct LocationCarModel: Codable {
+    
+    // MARK: - Properties
     var poiList: [PointOfInterest]
+    
+    // MARK: - PointOfInterest
     struct PointOfInterest: Codable {
         var id: Int
         var coordinate: Position

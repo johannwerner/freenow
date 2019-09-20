@@ -1,3 +1,6 @@
+
+typealias MapBounds = (position1: Position, position2: Position)
+
 /// Operation status enum for MapView.
 enum MapListStatus {
     case loading
@@ -22,6 +25,7 @@ struct MapConstants {
 
 struct MapCarModel: Codable {
     var poiList: [PointOfInterest]
+    
     struct PointOfInterest: Codable {
         var id: Int
         var coordinate: Position

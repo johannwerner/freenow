@@ -32,7 +32,7 @@ final class CarListViewModel {
     }
 }
 
-// MARK: - Public functions
+// MARK: - Public
 
 extension CarListViewModel {
     

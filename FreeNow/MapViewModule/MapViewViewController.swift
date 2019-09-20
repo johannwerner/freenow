@@ -5,8 +5,6 @@ import MapKit
 /// Show a map view
 /// - Requires: `RxSwift`, `RxCocoa`
 
-typealias MapBounds = (position1: Position, position2: Position)
-
 final class MapViewViewController: UIViewController {
     
     // MARK: Dependencies
@@ -49,7 +47,7 @@ final class MapViewViewController: UIViewController {
 }
 
 // MARK: - MARKMKMapViewDelegate
-extension MapViewViewController: MKMapViewDelegate {    
+extension MapViewViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated: Bool) {
         viewAction.accept(.mapBoundsUpdated(self.mapView.edgeBounds()))
     }
@@ -96,10 +94,12 @@ private extension MapViewViewController {
     }
     
     func handlePins() {
+        mapView.removeAnnotations(mapView.annotations)
         viewModel.positions.forEach { position in
             addPinToMap(position: position)
         }
     }
+    
     func addPinToMap(position: Position) {
         let annotation = MKPointAnnotation()
         let latitidue = position.latitude

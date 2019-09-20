@@ -24,7 +24,7 @@ extension LocationsListInteractorApi {
                  parameters: nil
             )
             .flatMap { (response, json) -> Observable<Any> in
-                return Observable.just(json)
+                Observable.just(json)
             }.async()
     }
 }

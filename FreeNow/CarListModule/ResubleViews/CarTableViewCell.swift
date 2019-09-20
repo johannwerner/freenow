@@ -24,8 +24,14 @@ final class CarTableViewCell: UITableViewCell {
 // MARK: - Public
 extension CarTableViewCell {
     func fill(with model: CarModel) {
+        let fuelAttributedString = AttributedStringManager.convertStringToAttributedString(
+            model.fuelString,
+            attributesForBold: attributesForBold,
+            attributesForCustom: attributesForCustom
+        )
+        
         licensePlateView.setTitle(model.numberPlate)
-        fuelLabel.text = model.fuelString
+        fuelLabel.attributedText = fuelAttributedString
         modelLabel.text = model.model
         accessoryType = .disclosureIndicator
         selectionStyle = .gray
@@ -34,8 +40,12 @@ extension CarTableViewCell {
 
 // MARK: - Private
 private extension CarTableViewCell {
-    var hasPosition: Bool {
-        true
+    var attributesForBold: [NSAttributedString.Key: Any] {
+        [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16)]
+    }
+    
+    var attributesForCustom: [NSAttributedString.Key: Any] {
+        [NSAttributedString.Key.foregroundColor: ColorTheme.primaryAppColor]
     }
     
     func setUpViews() {
@@ -49,7 +59,7 @@ private extension CarTableViewCell {
         contentView.addSubview(vehicleTitleLabel)
         vehicleTitleLabel.autoPinEdge(toSuperviewEdge: .top, withInset: 10)
         vehicleTitleLabel.autoAlignAxis(toSuperviewAxis: .vertical)
-        vehicleTitleLabel.text = "car_list_item_title".localizedString(CLMLComments.vehicleCellTitle)
+        vehicleTitleLabel.text = "car_list_item_title".localizedString(CLComments.vehicleCellTitle)
         vehicleTitleLabel.font = UIFont.systemFont(ofSize: 24)
     }
     
@@ -114,7 +124,17 @@ private extension LicensePlateView {
             height: 3
         )
     }
-    // Private is included here to restrict access only to LicensePlateView
+    
+    
+    private var licensePlateLabelEdgeInsents: UIEdgeInsets {
+        UIEdgeInsets(
+            top: 0,
+            left: 7,
+            bottom: 0,
+            right: 7
+        )
+    }
+    
     private func initUI() {
         createCircleViews()
         setUpLicensePlateLabel()
@@ -144,12 +164,6 @@ private extension LicensePlateView {
     
     private func setUpLicensePlateLabel() {
         addSubview(licensePlateLabel)
-        let licensePlateLabelEdgeInsents = UIEdgeInsets(
-            top: 0,
-            left: 7,
-            bottom: 0,
-            right: 7
-        )
         licensePlateLabel.autoPinEdgesToSuperviewEdges(with: licensePlateLabelEdgeInsents)
     }
 }

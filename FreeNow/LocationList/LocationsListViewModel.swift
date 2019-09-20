@@ -74,7 +74,7 @@ private extension LocationsListViewModel {
                  case .loading:
                     self.viewEffect.accept(.loading)
                  case .error:
-                     break
+                    self.viewEffect.accept(.error)
                  case .success(let model):
                     self.viewEffect.accept(.success)
                     self.coordinator.showCarList(model: model, locationModel: locationModel, animated: true)
