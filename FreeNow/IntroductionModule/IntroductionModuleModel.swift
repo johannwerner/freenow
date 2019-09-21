@@ -23,5 +23,7 @@ struct IntroductionConstants {
 
 struct IntroductionLocationModel: Codable {
     var name: String
+    /// Bounds should always have two or more items in the array otherwise through error.
+    /// IntroductionModuleUseCase ensures bounds will two or more items otherwise the user will see the error screen and not the location screen.
     var bounds: [Position]
 }

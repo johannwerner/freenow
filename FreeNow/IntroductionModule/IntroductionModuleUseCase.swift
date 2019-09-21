@@ -48,6 +48,7 @@ private extension Array where Iterator.Element == Dictionary<String, Any> {
                 assertionFailure("bounds requires at least two positions")
                 return nil
             }
+            //Code in IntroductionModuleCoordinator relies on bounds never having an empty array <1>
             return model
         })
     }

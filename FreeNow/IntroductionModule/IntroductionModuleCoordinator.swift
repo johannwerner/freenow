@@ -65,6 +65,7 @@ private extension NonEmptyArray where Iterator.Element == IntroductionLocationMo
             LocationModel(
                 name: model.name,
                 bounds: model.bounds.convertToNonEmptyArray()!
+                //Code in IntroductionModuleUseCase prevents model.bounds from ever being empty <1>
             )
         }
     }
