@@ -6,7 +6,6 @@ enum LocationsListStatus {
     case success(LocationCarModel)
 }
 
-
 /// View effect enum for LocationsList.
 enum LocationsListViewEffect {
     case success

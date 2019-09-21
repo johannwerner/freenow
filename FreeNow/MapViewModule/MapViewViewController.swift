@@ -148,8 +148,8 @@ private extension MapViewViewController {
                 switch effect {
                 case .success:
                     self.handlePins()
-                case .loading:
-                    break
+                case .loading: break
+                case   .error: break
                 }
             })
             .disposed(by: disposeBag)

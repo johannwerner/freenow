@@ -96,3 +96,15 @@ private extension CarModel {
         )
     }
 }
+
+// MARK: - Navigation to Error View
+
+extension LocationsListCoordinator {
+    func showError(
+        animated: Bool
+    ) {
+        let configurator = ErrorModuleConfigurator(errorModuleInteractor: ErrorModuleInteractorApi())
+        let coordinator = ErrorModuleCoordinator(navigationController: navigationController, configurator: configurator)
+        coordinator.showError(animated: animated)
+    }
+}

@@ -62,7 +62,8 @@ private extension MapViewViewModel {
                      case .loading:
                         self.viewEffect.accept(.loading)
                      case .error:
-                         break
+                        self.viewEffect.accept(.error)
+                        self.coordinator.showError(animated: true)
                      case .success(let positions):
                         self.positions = positions
                         self.viewEffect.accept(.success)
@@ -84,6 +85,7 @@ private extension MapViewViewModel {
                     switch effect {
                     case .success: break
                     case .loading: break
+                    case   .error: break  
                     }
                 })
                 .disposed(by: disposeBag)

@@ -22,7 +22,10 @@ extension LocationsListUseCase {
             assertionFailure("Bounds array did not contain 2 or more elements")
             return Observable.just(LocationsListStatus.error)
         }
-        return interactor.getListOfCarsForLocation(position1: positionTuple.0, position2: positionTuple.1)
+        return interactor.getListOfCarsForLocation(
+            position1: positionTuple.0,
+            position2: positionTuple.1
+        )
             .map { (result: Async<Any>) -> LocationsListStatus in
                 switch result {
                 case .loading:

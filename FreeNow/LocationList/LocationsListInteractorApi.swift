@@ -30,8 +30,17 @@ extension LocationsListInteractorApi {
 }
 
 private extension LocationsListInteractorApi {
-    func url(position1: Position, position2: Position) -> String {
-        String(format: LocationListConstants.carListUrl, position1.latitude, position1.longitude, position2.latitude, position2.longitude)
+    func url(
+        position1: Position,
+        position2: Position
+    ) -> String {
+        String(
+            format: LocationListConstants.carListUrl,
+            position1.latitude,
+            position1.longitude,
+            position2.latitude,
+            position2.longitude
+        )
     }
 }
 

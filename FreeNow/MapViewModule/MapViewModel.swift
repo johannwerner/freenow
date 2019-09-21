@@ -12,6 +12,7 @@ enum MapListStatus {
 enum MapViewViewEffect {
     case success
     case loading
+    case error
 }
 
 /// View action enum for MapView.
@@ -24,6 +25,7 @@ struct MapConstants {
 }
 
 struct MapCarModel: Codable {
+    
     var poiList: [PointOfInterest]
     
     struct PointOfInterest: Codable {

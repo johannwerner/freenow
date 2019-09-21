@@ -50,7 +50,7 @@ private extension AppDelegate {
     }
     
     func showFirstView() {
-        let startNavigationController = UINavigationController()
+         let startNavigationController = UINavigationController()
          startNavigationController.isNavigationBarHidden = true
          makeNavigationControllerMain(navigationController: startNavigationController)
          showIntroduction(navigationController: startNavigationController)

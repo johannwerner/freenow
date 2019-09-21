@@ -17,3 +17,7 @@
 "introduction_sub_title" = "iOS Code Challenge";
 
 "map_vehicles_primary_button" = "Show all";
+
+"error_title" = "Sorry something went wrong on our side. Please check your internet connection and try again.";
+
+"error_primary_button" = "Try again";

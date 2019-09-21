@@ -77,7 +77,7 @@ private extension ActivityViewComponent {
             delay: 0,
             options: ActivityViewStyle.animationStyle,
             animations: { [unowned self] in
-                self.backgroundColor = .clear
+            self.backgroundColor = .clear
         }, completion: { [unowned self] _ in
             self.activityIndicator.stopAnimating()
             self.removeFromSuperview()

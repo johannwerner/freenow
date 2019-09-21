@@ -29,7 +29,7 @@ class FreeNowTests: XCTestCase {
 }
 
 extension FreeNowTests {
-    func test_parsingOfCars_licensePlate() {
+    func test_parsingOfCars_latitude() {
         //Given
         let position = Position(latitude: 0, longitude: 0)
         let nonEmptyArray = [position, position].convertToNonEmptyArray()!

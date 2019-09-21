@@ -7,7 +7,7 @@ extension String {
         NSLocalizedString(
             self,
             tableName: "FreeNow",
-            value: "missing string",
+            value: "missing string: \(self)",
             comment: comment
         )
     }
