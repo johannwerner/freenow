@@ -33,7 +33,7 @@ private extension MapViewInteractorApi {
            _ position2: Position
         ) -> String {
             String(
-                format: LocationListConstants.carListUrl,
+                format: MapConstants.carListUrl,
                 position1.latitude,
                 position1.longitude,
                 position2.latitude,
