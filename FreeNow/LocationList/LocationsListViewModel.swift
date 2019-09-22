@@ -6,7 +6,7 @@ import RxSwift
 final class LocationsListViewModel {
     
     // MARK: - Properties
-    private var listOfLocations: NonEmptyArray<LocationModel>
+    private let listOfLocations: NonEmptyArray<LocationModel>
     
     // MARK: MvRx
     let viewEffect = PublishRelay<LocationsListViewEffect>()
@@ -78,7 +78,11 @@ private extension LocationsListViewModel {
                     self.coordinator.showError(animated: true)
                  case .success(let model):
                     self.viewEffect.accept(.success)
-                    self.coordinator.showCarList(model: model, locationModel: locationModel, animated: true)
+                    self.coordinator.showCarList(
+                        model: model,
+                        locationModel: locationModel,
+                        animated: true
+                    )
                  }
              })
              .disposed(by: disposeBag)

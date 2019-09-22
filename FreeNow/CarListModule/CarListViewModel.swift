@@ -5,7 +5,7 @@ import RxSwift
 /// - Note: A view model can refer to one or more use cases.
 final class CarListViewModel {
     // MARK: - Properties
-    var model: CarListModel
+    let model: CarListModel
     
     // MARK: MvRx
     let viewEffect = PublishRelay<CarListViewEffect>()

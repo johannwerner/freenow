@@ -12,7 +12,7 @@ class AppViewController: UIViewController {
 struct ActivityView {
     
     // MARK: - Properties
-    private var activityView: ActivityViewComponent
+    private let activityView: ActivityViewComponent
     
     fileprivate init(activityView: ActivityViewComponent) {
         self.activityView = activityView
@@ -44,8 +44,8 @@ private struct ActivityViewStyle {
 // MARK: - Activity View Component
 final private class ActivityViewComponent: UIView {
     // MARK: - Properties
-    private var activityIndicator = UIActivityIndicatorView()
-    private var activityView = UIView()
+    private let activityIndicator = UIActivityIndicatorView()
+    private let activityView = UIView()
     // MARK: - Life Cycle
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -6,8 +6,8 @@ class AttributedStringManager {
     
     // supported tags
     private static let boldTag = "<b>"
-    private static var customTag = "<custom>"
-    private static var underlineTag = "<u>"
+    private static let customTag = "<custom>"
+    private static let underlineTag = "<u>"
     
     // Underline attributes
     private static var underlineAttribute = [underlineTag: [NSAttributedString.Key.underlineStyle: 1.0]]

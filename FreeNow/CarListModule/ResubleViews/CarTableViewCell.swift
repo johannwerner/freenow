@@ -3,10 +3,10 @@ import UIKit
 final class CarTableViewCell: UITableViewCell {
     
     // MARK: - Properties
-    private var vehicleTitleLabel = UILabel()
-    private var licensePlateView = LicensePlateView()
-    private var fuelLabel = UILabel()
-    private var modelLabel = UILabel()
+    private let vehicleTitleLabel = UILabel()
+    private let licensePlateView = LicensePlateView()
+    private let fuelLabel = UILabel()
+    private let modelLabel = UILabel()
 
     // MARK: - Life Cycle
     
@@ -64,7 +64,6 @@ private extension CarTableViewCell {
     }
     
     func setUpLicensePlateView() {
-        licensePlateView = LicensePlateView()
         contentView.addSubview(licensePlateView)
         licensePlateView.autoPinEdge(.top, to: .bottom, of: vehicleTitleLabel, withOffset: 10)
         licensePlateView.autoAlignAxis(toSuperviewAxis: .vertical)
@@ -91,7 +90,7 @@ private extension CarTableViewCell {
 // MARK: - License Plate View
 final private class LicensePlateView: UIView {
     // MARK: - Properties
-    private var licensePlateLabel = UILabel()
+    private let licensePlateLabel = UILabel()
     
     // MARK: - Life Cycle
     override init(frame: CGRect) {

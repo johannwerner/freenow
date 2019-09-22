@@ -3,7 +3,7 @@ import UIKit
 final class LocationTableViewCell: UITableViewCell {
 
     // MARK: - Properties
-    private var locationNameLabel = UILabel()
+    private let locationNameLabel = UILabel()
     
     // MARK: - Life Cycle
     
