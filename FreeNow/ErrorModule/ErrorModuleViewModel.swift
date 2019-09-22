@@ -6,7 +6,7 @@ import RxSwift
 /// - Note: A view model can refer to one or more use cases.
 final class ErrorModuleViewModel {
 
-    // MARK: MvRx
+    // MARK: ViewEffect
     let viewEffect = PublishRelay<ErrorModuleViewEffect>()
     
     // MARK: Dependencies

@@ -8,7 +8,7 @@ final class LocationsListViewModel {
     // MARK: - Properties
     private let listOfLocations: NonEmptyArray<LocationModel>
     
-    // MARK: MvRx
+    // MARK: ViewEffect
     let viewEffect = PublishRelay<LocationsListViewEffect>()
     
     // MARK: Dependencies

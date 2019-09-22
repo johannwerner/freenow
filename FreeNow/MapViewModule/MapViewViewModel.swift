@@ -8,7 +8,7 @@ final class MapViewViewModel {
     // MARK: - Properties
     var positions: NonEmptyArray<Position>
 
-    // MARK: MvRx
+    // MARK: ViewEffect
     let viewEffect = PublishRelay<MapViewViewEffect>()
     
     // MARK: Dependencies

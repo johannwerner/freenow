@@ -7,7 +7,7 @@ final class CarListViewModel {
     // MARK: - Properties
     let model: CarListModel
     
-    // MARK: MvRx
+    // MARK: ViewEffect
     let viewEffect = PublishRelay<CarListViewEffect>()
     
     // MARK: Dependencies

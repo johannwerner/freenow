@@ -7,7 +7,7 @@ import RxSwift
 
 final class IntroductionModuleViewModel {
 
-    // MARK: MvRx
+    // MARK: ViewEffect
     let viewEffect = PublishRelay< IntroductionModuleViewEffect>()
     
     // MARK: Dependencies
