@@ -283,7 +283,6 @@
 				93ACE9D82333737A00056902 /* SharedModels */,
 				93ACE9DC2333737A00056902 /* SharedViews */,
 				93ACE9D12333728400056902 /* Foundation */,
-				933F617E2334BB4C00B8F6BF /* AttributedStringManager.swift */,
 				93ACE9DE2333737A00056902 /* AppViewController.swift */,
 				93ACE9DF2333737A00056902 /* Async.swift */,
 				93ACE9E02333737A00056902 /* ColorTheme.swift */,
@@ -307,6 +306,7 @@
 				93ACE9D32333728400056902 /* String+App.swift */,
 				93ACE9D42333728400056902 /* Array+App.swift */,
 				933E5A302337A479005BB2B8 /* Errors.swift */,
+				933F617E2334BB4C00B8F6BF /* AttributedStringManager.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";

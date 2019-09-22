@@ -34,10 +34,6 @@ extension LocationsListUseCase {
                     guard let model = LocationCarModel.parse(from: data) else {
                         return .error
                     }
-                    guard model.poiList.isEmpty == false else {
-                        assertionFailure("poiList is empty")
-                        return .error
-                    }
                     return .success(model)
                 case .error:
                     return .error
