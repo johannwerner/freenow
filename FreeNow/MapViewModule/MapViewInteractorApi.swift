@@ -18,7 +18,7 @@ extension MapViewInteractorApi {
         RxAlamofire
             .requestJSON(
                 .get,
-                 url(position1, position2),
+                 url(position1: position1, position2: position2),
                  parameters: nil
             )
             .flatMap { (response, json) -> Observable<Any> in
@@ -29,8 +29,8 @@ extension MapViewInteractorApi {
 
 private extension MapViewInteractorApi {
         func url(
-           _ position1: Position,
-           _ position2: Position
+           position1: Position,
+           position2: Position
         ) -> String {
             String(
                 format: MapConstants.carListUrl,
