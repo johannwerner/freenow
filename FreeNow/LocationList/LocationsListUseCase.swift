@@ -35,6 +35,7 @@ extension LocationsListUseCase {
                         return .error
                     }
                     guard model.poiList.isEmpty == false else {
+                        assertionFailure("poiList is empty")
                         return .error
                     }
                     return .success(model)

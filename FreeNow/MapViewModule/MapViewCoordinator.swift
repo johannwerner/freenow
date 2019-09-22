@@ -27,13 +27,12 @@ extension MapViewCoordinator {
     
     func showMapView(
         position: Position,
-        allPositions: [Position],
         animated: Bool
         ) {
         let viewModel = MapViewViewModel(
             coordinator: self,
             configurator: configurator,
-            positions: [position].convertToNonEmptyArray()!
+            positions: [position].forceToNonEmptyArray() //array cannot be empty
         )
         let viewController = MapViewViewController(viewModel: viewModel)
         navigationController.pushViewController(

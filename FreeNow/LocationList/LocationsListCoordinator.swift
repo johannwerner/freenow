@@ -46,15 +46,9 @@ extension LocationsListCoordinator {
         model: LocationCarModel,
         locationModel: LocationModel,
         animated: Bool
-    ) {
-        guard let nonEmptyArray = model.poiList.convert().convertToNonEmptyArray()
-            else {
-            assertionFailure("array is empty")
-            return
-        }
-        
+    ) {        
         carListCoordinator.showCarList(
-            models: nonEmptyArray,
+            models: model.poiList.convert(),
             locationName: locationModel.name,
             animated: animated
         )
@@ -76,8 +70,8 @@ private extension LocationsListCoordinator {
 }
 
 // MARK: - Convert
-private extension Array where Iterator.Element == LocationCarModel.PointOfInterest {
-    func convert() -> [CarModel] {
+private extension NonEmptyArray where Iterator.Element == LocationCarModel.PointOfInterest {
+    func convert() -> NonEmptyArray<CarModel> {
         map { model -> CarModel in
             CarModel(locationCarModel: model)
         }

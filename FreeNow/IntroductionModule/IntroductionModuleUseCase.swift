@@ -28,6 +28,7 @@ extension IntroductionModuleUseCase {
                     }
                     let listOfObjects = listOfArray.convert()
                     guard let nonEmptyArray = listOfObjects.convertToNonEmptyArray() else {
+                        assertionFailure("array is empty")
                         return .error
                     }
                     return .success(nonEmptyArray)
@@ -42,6 +43,7 @@ private extension Array where Iterator.Element == Dictionary<String, Any> {
     func convert() -> [IntroductionLocationModel] {
         compactMap({ dict -> IntroductionLocationModel? in
             guard let model = IntroductionLocationModel.parse(from: dict) else {
+                assertionFailure("parse failed")
                 return nil
             }
             guard model.bounds.count > 1 else {

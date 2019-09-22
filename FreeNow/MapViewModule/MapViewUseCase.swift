@@ -27,6 +27,7 @@ extension MapViewUseCase {
                     }
                     let positions = model.convert()
                     guard let nonEmptyArray = positions.convertToNonEmptyArray() else {
+                        assertionFailure("positions is empty")
                         return .error
                     }
                     return .success(nonEmptyArray)
