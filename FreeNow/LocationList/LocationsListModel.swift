@@ -26,7 +26,3 @@ struct LocationModel: Codable {
     var name: String
     var bounds: NonEmptyArray<Position>
 }
-
-enum DecodeError: Error {
-    case arrayIsEmptyError
-}

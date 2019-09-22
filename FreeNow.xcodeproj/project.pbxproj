@@ -11,6 +11,7 @@
 		932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C2823336F6900DDC791 /* AppDelegate.swift */; };
 		932E8C2F23336F6A00DDC791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932E8C2E23336F6A00DDC791 /* Assets.xcassets */; };
 		932E8C4023336F6B00DDC791 /* FreeNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */; };
+		933E5A312337A479005BB2B8 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E5A302337A479005BB2B8 /* Errors.swift */; };
 		933F617F2334BB4C00B8F6BF /* AttributedStringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F617E2334BB4C00B8F6BF /* AttributedStringManager.swift */; };
 		933F61812334BB5700B8F6BF /* AttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F61802334BB5700B8F6BF /* AttributedStringTests.swift */; };
 		933F619C2335105F00B8F6BF /* ErrorModuleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F61942335105F00B8F6BF /* ErrorModuleCoordinator.swift */; };
@@ -109,6 +110,7 @@
 		932E8C3B23336F6B00DDC791 /* FreeNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowTests.swift; sourceTree = "<group>"; };
 		932E8C4123336F6B00DDC791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		933E5A302337A479005BB2B8 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		933F617E2334BB4C00B8F6BF /* AttributedStringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringManager.swift; sourceTree = "<group>"; };
 		933F61802334BB5700B8F6BF /* AttributedStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttributedStringTests.swift; path = FreeNow/SupportingFiles/AttributedStringTests.swift; sourceTree = SOURCE_ROOT; };
 		933F61822334D72600B8F6BF /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 				93ACE9D22333728400056902 /* Decodable+Utils.swift */,
 				93ACE9D32333728400056902 /* String+App.swift */,
 				93ACE9D42333728400056902 /* Array+App.swift */,
+				933E5A302337A479005BB2B8 /* Errors.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -623,6 +626,7 @@
 				93ACEA252333760800056902 /* NonEmpty+Comparable.swift in Sources */,
 				933F619C2335105F00B8F6BF /* ErrorModuleCoordinator.swift in Sources */,
 				93ACE9F72333744400056902 /* IntroductionModuleViewModel.swift in Sources */,
+				933E5A312337A479005BB2B8 /* Errors.swift in Sources */,
 				93ACEA202333760800056902 /* NonEmpty+Dictionary.swift in Sources */,
 				93ACE9E62333737B00056902 /* CircleView.swift in Sources */,
 				933F61A12335105F00B8F6BF /* ErrorModuleInteractorApi.swift in Sources */,

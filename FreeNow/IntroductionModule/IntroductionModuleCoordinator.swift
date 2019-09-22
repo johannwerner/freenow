@@ -50,14 +50,9 @@ extension  IntroductionModuleCoordinator {
             navigationController: navigationController,
             configurator: configurator
         )
-        
-        guard let nonEmptyModels = models.convert().convertToNonEmptyArray() else {
-            assertionFailure("location models are empty")
-            return
-        }
 
         coordinator.showLocationList(
-            models: nonEmptyModels,
+            models: models.convert(),
             animated: true
         )
     }
@@ -65,8 +60,8 @@ extension  IntroductionModuleCoordinator {
 
 private extension NonEmptyArray where Iterator.Element == IntroductionLocationModel {
     
-    func convert() -> [LocationModel] {
-        compactMap { model -> LocationModel? in
+    func convert() -> NonEmptyArray<LocationModel> {
+        map { model -> LocationModel in
             LocationModel(
                 name: model.name,
                 bounds: model.bounds
