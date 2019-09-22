@@ -36,7 +36,7 @@ final class MapViewViewModel {
 // MARK: - Public functions
 
 extension MapViewViewModel {
-    
+
     func bind(to viewAction: PublishRelay<MapViewViewAction>) {
         viewAction
             .asObservable()

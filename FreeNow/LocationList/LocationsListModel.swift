@@ -22,7 +22,7 @@ struct LocationListConstants {
     static let carListUrl = "https://fake-poi-api.mytaxi.com/?p1Lat=%f&p1Lon=%f&p2Lat=%f&p2Lon=%f"
 }
 
-struct LocationModel: Codable {
+struct LocationModel {
     var name: String
     var bounds: NonEmptyArray<Position>
 }

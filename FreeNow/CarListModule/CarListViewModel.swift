@@ -46,7 +46,7 @@ extension CarListViewModel {
     
     func modelForIndexPath(index: Int) -> CarModel {
         if index == 0 {
-           return model.carModels.first
+            return model.carModels.first
         }
         guard let location = model.carModels[safe: .tail(index - 1)] else {
             assertionFailure("index out of bounds")

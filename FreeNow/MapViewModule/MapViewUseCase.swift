@@ -26,11 +26,7 @@ extension MapViewUseCase {
                         return .error
                     }
                     let positions = model.convert()
-                    guard let nonEmptyArray = positions.convertToNonEmptyArray() else {
-                        assertionFailure("positions is empty")
-                        return .error
-                    }
-                    return .success(nonEmptyArray)
+                    return .success(positions)
                 case .error:
                     return .error
                 }
@@ -39,7 +35,7 @@ extension MapViewUseCase {
 }
 
 private extension MapCarModel {
-    func convert() -> [Position] {
+    func convert() -> NonEmptyArray<Position> {
         poiList.map { carModel -> Position in
             carModel.coordinate
         }

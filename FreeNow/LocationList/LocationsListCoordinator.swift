@@ -82,7 +82,7 @@ private extension NonEmptyArray where Iterator.Element == LocationCarModel.Point
 private extension CarModel {
     init(locationCarModel: LocationCarModel.PointOfInterest) {
         self = CarModel(
-            numberPlate: locationCarModel.numberPlate,
+            licensePlate: locationCarModel.licensePlate,
             id: locationCarModel.id,
             model: locationCarModel.model,
             fuel: locationCarModel.fuel,

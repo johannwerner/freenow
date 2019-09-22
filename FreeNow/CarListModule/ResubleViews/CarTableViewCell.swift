@@ -30,7 +30,7 @@ extension CarTableViewCell {
             attributesForCustom: attributesForCustom
         )
         
-        licensePlateView.setTitle(String(model.id))
+        licensePlateView.setTitle(model.licensePlate)
         fuelLabel.attributedText = fuelAttributedString
         modelLabel.text = model.model
         accessoryType = .disclosureIndicator

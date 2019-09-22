@@ -1,11 +1,11 @@
 import Foundation
 
-struct CarModel: Codable, Equatable {
+struct CarModel: Equatable {
     static func == (lhs: CarModel, rhs: CarModel) -> Bool {
         lhs.id == rhs.id
     }
     
-    var numberPlate: String
+    var licensePlate: String
     var id: Int
     var model: String
     var fuel: Double
