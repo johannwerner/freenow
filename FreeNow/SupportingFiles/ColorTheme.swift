@@ -38,7 +38,12 @@ extension ColorTheme {
 // MARK: - Private Methods
 private extension ColorTheme {
     static func blackWithAlpha(alpha: CGFloat) -> UIColor {
-        ColorTheme.colorWith(red: 0, green: 0, blue: 0, alpha: alpha)
+        ColorTheme.colorWith(
+            red:   0,
+            green: 0,
+            blue:  0,
+            alpha: alpha
+        )
     }
     /**
        Red/Blue /Green from 0 to 255 to create a color. Do not use divide by /255 because this is being done here.
