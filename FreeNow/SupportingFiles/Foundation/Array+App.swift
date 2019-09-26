@@ -26,6 +26,7 @@ extension Array {
     }
     
     /// Converts array to NonEmptyArray.
+    /// Make sure array is not empty when using this.
     /// Crashes if array is empty.
     func forceToNonEmptyArray() -> NonEmptyArray<Element> {
         guard let nonEmpty = self.convertToNonEmptyArray() else {

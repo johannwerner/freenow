@@ -48,7 +48,17 @@ private extension ColorTheme {
     /**
        Red/Blue /Green from 0 to 255 to create a color. Do not use divide by /255 because this is being done here.
      */
-    static func colorWith(red: UInt8, green: UInt8, blue: UInt8, alpha: CGFloat = 1.0) -> UIColor {
-        UIColor(red: CGFloat(red)/255, green: CGFloat(green)/255, blue: CGFloat(blue)/255, alpha: alpha)
+    static func colorWith(
+        red: UInt8,
+        green: UInt8,
+        blue: UInt8,
+        alpha: CGFloat = 1.0
+        ) -> UIColor {
+        UIColor(
+            red: CGFloat(red)/255,
+            green: CGFloat(green)/255,
+            blue: CGFloat(blue)/255,
+            alpha: alpha
+        )
     }
 }
