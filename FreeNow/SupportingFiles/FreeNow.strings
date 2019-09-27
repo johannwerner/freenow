@@ -1,0 +1,23 @@
+/* 
+  FreeNow.strings
+  FreeNow
+
+  Created by Johann Werner on 19.09.19.
+  Copyright © 2019 Johann Werner. All rights reserved.
+*/
+
+"car_list_item_title" = "Vehicle";
+
+"car_list_item_tank_empty" = "Tank is empty";
+
+"car_list_item_tank_status" = "Fuel is <custom><b>%.0f%%</b></custom> Full";
+
+"introduction_primary_button" = "Start";
+
+"introduction_sub_title" = "iOS Code Challenge";
+
+"map_vehicles_primary_button" = "Show all";
+
+"error_title" = "Sorry something went wrong on our side. Please check your internet connection and try again.";
+
+"error_primary_button" = "Try again";

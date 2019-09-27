@@ -11,10 +11,79 @@
 		932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C2823336F6900DDC791 /* AppDelegate.swift */; };
 		932E8C2F23336F6A00DDC791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932E8C2E23336F6A00DDC791 /* Assets.xcassets */; };
 		932E8C4023336F6B00DDC791 /* FreeNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */; };
+		933E5A312337A479005BB2B8 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E5A302337A479005BB2B8 /* Errors.swift */; };
+		933F617F2334BB4C00B8F6BF /* AttributedStringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F617E2334BB4C00B8F6BF /* AttributedStringManager.swift */; };
+		933F61812334BB5700B8F6BF /* AttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F61802334BB5700B8F6BF /* AttributedStringTests.swift */; };
+		933F619C2335105F00B8F6BF /* ErrorModuleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F61942335105F00B8F6BF /* ErrorModuleCoordinator.swift */; };
+		933F619D2335105F00B8F6BF /* ErrorModuleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F61952335105F00B8F6BF /* ErrorModuleUseCase.swift */; };
+		933F619E2335105F00B8F6BF /* ErrorModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F61962335105F00B8F6BF /* ErrorModuleViewController.swift */; };
+		933F619F2335105F00B8F6BF /* ErrorModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F61972335105F00B8F6BF /* ErrorModuleInteractor.swift */; };
+		933F61A02335105F00B8F6BF /* ErrorModuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F61982335105F00B8F6BF /* ErrorModuleModel.swift */; };
+		933F61A12335105F00B8F6BF /* ErrorModuleInteractorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F61992335105F00B8F6BF /* ErrorModuleInteractorApi.swift */; };
+		933F61A22335105F00B8F6BF /* ErrorModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F619A2335105F00B8F6BF /* ErrorModuleViewModel.swift */; };
+		933F61A32335105F00B8F6BF /* ErrorModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F619B2335105F00B8F6BF /* ErrorModuleConfigurator.swift */; };
 		93ACE9D0233371AD00056902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93ACE9CE233371AD00056902 /* LaunchScreen.storyboard */; };
 		93ACE9D52333728400056902 /* Decodable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D22333728400056902 /* Decodable+Utils.swift */; };
-		93ACE9D62333728400056902 /* String+CarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D32333728400056902 /* String+CarApp.swift */; };
-		93ACE9D72333728400056902 /* Array+CarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D42333728400056902 /* Array+CarApp.swift */; };
+		93ACE9D62333728400056902 /* String+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D32333728400056902 /* String+App.swift */; };
+		93ACE9D72333728400056902 /* Array+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D42333728400056902 /* Array+App.swift */; };
+		93ACE9E32333737B00056902 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9D92333737A00056902 /* Position.swift */; };
+		93ACE9E42333737B00056902 /* UIAplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9DA2333737A00056902 /* UIAplication+Window.swift */; };
+		93ACE9E52333737B00056902 /* NSObject+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9DB2333737A00056902 /* NSObject+App.swift */; };
+		93ACE9E62333737B00056902 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9DD2333737A00056902 /* CircleView.swift */; };
+		93ACE9E72333737B00056902 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9DE2333737A00056902 /* AppViewController.swift */; };
+		93ACE9E82333737B00056902 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9DF2333737A00056902 /* Async.swift */; };
+		93ACE9E92333737B00056902 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9E02333737A00056902 /* ColorTheme.swift */; };
+		93ACE9EA2333737B00056902 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9E12333737A00056902 /* ObservableType.swift */; };
+		93ACE9EB2333737B00056902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9E22333737A00056902 /* ViewController.swift */; };
+		93ACE9F52333744400056902 /* IntroductionModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9ED2333744400056902 /* IntroductionModuleViewController.swift */; };
+		93ACE9F62333744400056902 /* IntroductionModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9EE2333744400056902 /* IntroductionModuleConfigurator.swift */; };
+		93ACE9F72333744400056902 /* IntroductionModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9EF2333744400056902 /* IntroductionModuleViewModel.swift */; };
+		93ACE9F82333744400056902 /* IntroductionModuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9F02333744400056902 /* IntroductionModuleModel.swift */; };
+		93ACE9F92333744400056902 /* IntroductionModuleInteractorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9F12333744400056902 /* IntroductionModuleInteractorApi.swift */; };
+		93ACE9FA2333744400056902 /* IntroductionModuleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9F22333744400056902 /* IntroductionModuleUseCase.swift */; };
+		93ACE9FB2333744400056902 /* IntroductionModuleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9F32333744400056902 /* IntroductionModuleCoordinator.swift */; };
+		93ACE9FC2333744400056902 /* IntroductionModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE9F42333744400056902 /* IntroductionModuleInteractor.swift */; };
+		93ACEA202333760800056902 /* NonEmpty+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA152333760700056902 /* NonEmpty+Dictionary.swift */; };
+		93ACEA212333760800056902 /* NonEmpty+SetAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA162333760700056902 /* NonEmpty+SetAlgebra.swift */; };
+		93ACEA222333760800056902 /* NonEmpty+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA172333760700056902 /* NonEmpty+Random.swift */; };
+		93ACEA232333760800056902 /* NonEmpty+MutableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA182333760700056902 /* NonEmpty+MutableCollection.swift */; };
+		93ACEA242333760800056902 /* NonEmpty+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA192333760700056902 /* NonEmpty+String.swift */; };
+		93ACEA252333760800056902 /* NonEmpty+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA1A2333760700056902 /* NonEmpty+Comparable.swift */; };
+		93ACEA262333760800056902 /* NonEmpty+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA1B2333760700056902 /* NonEmpty+Collection.swift */; };
+		93ACEA272333760800056902 /* NonEmpty+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA1C2333760700056902 /* NonEmpty+Array.swift */; };
+		93ACEA282333760800056902 /* NonEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA1D2333760700056902 /* NonEmpty.swift */; };
+		93ACEA292333760800056902 /* NonEmpty+RangeReplaceableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA1E2333760700056902 /* NonEmpty+RangeReplaceableCollection.swift */; };
+		93ACEA2A2333760800056902 /* NonEmpty+BidirectionalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA1F2333760700056902 /* NonEmpty+BidirectionalCollection.swift */; };
+		93ACEA2C233378BA00056902 /* FreeNow.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93ACEA2B233378BA00056902 /* FreeNow.strings */; };
+		93ACEA3B2333819200056902 /* LocationsListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA2E2333819200056902 /* LocationsListConfigurator.swift */; };
+		93ACEA3C2333819200056902 /* LocationsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA2F2333819200056902 /* LocationsListUseCase.swift */; };
+		93ACEA3D2333819200056902 /* LocationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA302333819200056902 /* LocationsListViewController.swift */; };
+		93ACEA3E2333819200056902 /* LocationsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA312333819200056902 /* LocationsListInteractor.swift */; };
+		93ACEA3F2333819200056902 /* LocationsListInteractorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA322333819200056902 /* LocationsListInteractorApi.swift */; };
+		93ACEA402333819200056902 /* LocationCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA342333819200056902 /* LocationCarModel.swift */; };
+		93ACEA422333819200056902 /* LocationsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA362333819200056902 /* LocationsListCoordinator.swift */; };
+		93ACEA432333819200056902 /* LocationsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA372333819200056902 /* LocationsListViewModel.swift */; };
+		93ACEA442333819200056902 /* LocationsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA382333819200056902 /* LocationsListModel.swift */; };
+		93ACEA452333819200056902 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA3A2333819200056902 /* LocationTableViewCell.swift */; };
+		93ACEA532333A4C100056902 /* CarListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA472333A4C000056902 /* CarListInteractor.swift */; };
+		93ACEA542333A4C100056902 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA482333A4C000056902 /* CarListViewModel.swift */; };
+		93ACEA552333A4C100056902 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA492333A4C000056902 /* CarListViewController.swift */; };
+		93ACEA562333A4C100056902 /* CarListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA4A2333A4C000056902 /* CarListCoordinator.swift */; };
+		93ACEA572333A4C100056902 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA4C2333A4C000056902 /* CarModel.swift */; };
+		93ACEA582333A4C100056902 /* CarListInteractorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA4D2333A4C000056902 /* CarListInteractorApi.swift */; };
+		93ACEA592333A4C100056902 /* CarListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA4E2333A4C000056902 /* CarListModel.swift */; };
+		93ACEA5A2333A4C100056902 /* CarListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA4F2333A4C000056902 /* CarListConfigurator.swift */; };
+		93ACEA5B2333A4C100056902 /* CarListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA502333A4C000056902 /* CarListUseCase.swift */; };
+		93ACEA5C2333A4C100056902 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA522333A4C000056902 /* CarTableViewCell.swift */; };
+		93ACEA662333AECB00056902 /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA5E2333AECB00056902 /* MapViewViewController.swift */; };
+		93ACEA672333AECB00056902 /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA5F2333AECB00056902 /* MapViewViewModel.swift */; };
+		93ACEA682333AECB00056902 /* MapViewInteractorApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA602333AECB00056902 /* MapViewInteractorApi.swift */; };
+		93ACEA692333AECB00056902 /* MapViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA612333AECB00056902 /* MapViewInteractor.swift */; };
+		93ACEA6A2333AECB00056902 /* MapViewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA622333AECB00056902 /* MapViewUseCase.swift */; };
+		93ACEA6B2333AECB00056902 /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA632333AECB00056902 /* MapViewCoordinator.swift */; };
+		93ACEA6C2333AECB00056902 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA642333AECB00056902 /* MapViewModel.swift */; };
+		93ACEA6D2333AECB00056902 /* MapViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA652333AECB00056902 /* MapViewConfigurator.swift */; };
+		93ACEA6F2333D87300056902 /* CarListTestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACEA6E2333D87300056902 /* CarListTestInteractor.swift */; };
 		F6B3A103761C67E01781FECF /* Pods_FreeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DACBBCEA4F82D22CA7CFCF /* Pods_FreeNow.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +110,80 @@
 		932E8C3B23336F6B00DDC791 /* FreeNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowTests.swift; sourceTree = "<group>"; };
 		932E8C4123336F6B00DDC791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		933E5A302337A479005BB2B8 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		933F617E2334BB4C00B8F6BF /* AttributedStringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringManager.swift; sourceTree = "<group>"; };
+		933F61802334BB5700B8F6BF /* AttributedStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttributedStringTests.swift; path = FreeNow/SupportingFiles/AttributedStringTests.swift; sourceTree = SOURCE_ROOT; };
+		933F61822334D72600B8F6BF /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		933F61942335105F00B8F6BF /* ErrorModuleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModuleCoordinator.swift; sourceTree = "<group>"; };
+		933F61952335105F00B8F6BF /* ErrorModuleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModuleUseCase.swift; sourceTree = "<group>"; };
+		933F61962335105F00B8F6BF /* ErrorModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModuleViewController.swift; sourceTree = "<group>"; };
+		933F61972335105F00B8F6BF /* ErrorModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModuleInteractor.swift; sourceTree = "<group>"; };
+		933F61982335105F00B8F6BF /* ErrorModuleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModuleModel.swift; sourceTree = "<group>"; };
+		933F61992335105F00B8F6BF /* ErrorModuleInteractorApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModuleInteractorApi.swift; sourceTree = "<group>"; };
+		933F619A2335105F00B8F6BF /* ErrorModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModuleViewModel.swift; sourceTree = "<group>"; };
+		933F619B2335105F00B8F6BF /* ErrorModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModuleConfigurator.swift; sourceTree = "<group>"; };
 		93ACE9CF233371AD00056902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93ACE9D22333728400056902 /* Decodable+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decodable+Utils.swift"; sourceTree = "<group>"; };
-		93ACE9D32333728400056902 /* String+CarApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CarApp.swift"; sourceTree = "<group>"; };
-		93ACE9D42333728400056902 /* Array+CarApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+CarApp.swift"; sourceTree = "<group>"; };
+		93ACE9D32333728400056902 /* String+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+App.swift"; sourceTree = "<group>"; };
+		93ACE9D42333728400056902 /* Array+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+App.swift"; sourceTree = "<group>"; };
+		93ACE9D92333737A00056902 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		93ACE9DA2333737A00056902 /* UIAplication+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAplication+Window.swift"; sourceTree = "<group>"; };
+		93ACE9DB2333737A00056902 /* NSObject+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+App.swift"; sourceTree = "<group>"; };
+		93ACE9DD2333737A00056902 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		93ACE9DE2333737A00056902 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		93ACE9DF2333737A00056902 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		93ACE9E02333737A00056902 /* ColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		93ACE9E12333737A00056902 /* ObservableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
+		93ACE9E22333737A00056902 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93ACE9ED2333744400056902 /* IntroductionModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionModuleViewController.swift; sourceTree = "<group>"; };
+		93ACE9EE2333744400056902 /* IntroductionModuleConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionModuleConfigurator.swift; sourceTree = "<group>"; };
+		93ACE9EF2333744400056902 /* IntroductionModuleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionModuleViewModel.swift; sourceTree = "<group>"; };
+		93ACE9F02333744400056902 /* IntroductionModuleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionModuleModel.swift; sourceTree = "<group>"; };
+		93ACE9F12333744400056902 /* IntroductionModuleInteractorApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionModuleInteractorApi.swift; sourceTree = "<group>"; };
+		93ACE9F22333744400056902 /* IntroductionModuleUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionModuleUseCase.swift; sourceTree = "<group>"; };
+		93ACE9F32333744400056902 /* IntroductionModuleCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionModuleCoordinator.swift; sourceTree = "<group>"; };
+		93ACE9F42333744400056902 /* IntroductionModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionModuleInteractor.swift; sourceTree = "<group>"; };
+		93ACEA152333760700056902 /* NonEmpty+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+Dictionary.swift"; sourceTree = "<group>"; };
+		93ACEA162333760700056902 /* NonEmpty+SetAlgebra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+SetAlgebra.swift"; sourceTree = "<group>"; };
+		93ACEA172333760700056902 /* NonEmpty+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+Random.swift"; sourceTree = "<group>"; };
+		93ACEA182333760700056902 /* NonEmpty+MutableCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+MutableCollection.swift"; sourceTree = "<group>"; };
+		93ACEA192333760700056902 /* NonEmpty+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+String.swift"; sourceTree = "<group>"; };
+		93ACEA1A2333760700056902 /* NonEmpty+Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+Comparable.swift"; sourceTree = "<group>"; };
+		93ACEA1B2333760700056902 /* NonEmpty+Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+Collection.swift"; sourceTree = "<group>"; };
+		93ACEA1C2333760700056902 /* NonEmpty+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+Array.swift"; sourceTree = "<group>"; };
+		93ACEA1D2333760700056902 /* NonEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmpty.swift; sourceTree = "<group>"; };
+		93ACEA1E2333760700056902 /* NonEmpty+RangeReplaceableCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+RangeReplaceableCollection.swift"; sourceTree = "<group>"; };
+		93ACEA1F2333760700056902 /* NonEmpty+BidirectionalCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+BidirectionalCollection.swift"; sourceTree = "<group>"; };
+		93ACEA2B233378BA00056902 /* FreeNow.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = FreeNow.strings; sourceTree = "<group>"; };
+		93ACEA2E2333819200056902 /* LocationsListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListConfigurator.swift; sourceTree = "<group>"; };
+		93ACEA2F2333819200056902 /* LocationsListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListUseCase.swift; sourceTree = "<group>"; };
+		93ACEA302333819200056902 /* LocationsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListViewController.swift; sourceTree = "<group>"; };
+		93ACEA312333819200056902 /* LocationsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListInteractor.swift; sourceTree = "<group>"; };
+		93ACEA322333819200056902 /* LocationsListInteractorApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListInteractorApi.swift; sourceTree = "<group>"; };
+		93ACEA342333819200056902 /* LocationCarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCarModel.swift; sourceTree = "<group>"; };
+		93ACEA362333819200056902 /* LocationsListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListCoordinator.swift; sourceTree = "<group>"; };
+		93ACEA372333819200056902 /* LocationsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListViewModel.swift; sourceTree = "<group>"; };
+		93ACEA382333819200056902 /* LocationsListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListModel.swift; sourceTree = "<group>"; };
+		93ACEA3A2333819200056902 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		93ACEA472333A4C000056902 /* CarListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListInteractor.swift; sourceTree = "<group>"; };
+		93ACEA482333A4C000056902 /* CarListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		93ACEA492333A4C000056902 /* CarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		93ACEA4A2333A4C000056902 /* CarListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListCoordinator.swift; sourceTree = "<group>"; };
+		93ACEA4C2333A4C000056902 /* CarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		93ACEA4D2333A4C000056902 /* CarListInteractorApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListInteractorApi.swift; sourceTree = "<group>"; };
+		93ACEA4E2333A4C000056902 /* CarListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListModel.swift; sourceTree = "<group>"; };
+		93ACEA4F2333A4C000056902 /* CarListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListConfigurator.swift; sourceTree = "<group>"; };
+		93ACEA502333A4C000056902 /* CarListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListUseCase.swift; sourceTree = "<group>"; };
+		93ACEA522333A4C000056902 /* CarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		93ACEA5E2333AECB00056902 /* MapViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
+		93ACEA5F2333AECB00056902 /* MapViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewViewModel.swift; sourceTree = "<group>"; };
+		93ACEA602333AECB00056902 /* MapViewInteractorApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewInteractorApi.swift; sourceTree = "<group>"; };
+		93ACEA612333AECB00056902 /* MapViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewInteractor.swift; sourceTree = "<group>"; };
+		93ACEA622333AECB00056902 /* MapViewUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewUseCase.swift; sourceTree = "<group>"; };
+		93ACEA632333AECB00056902 /* MapViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
+		93ACEA642333AECB00056902 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		93ACEA652333AECB00056902 /* MapViewConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewConfigurator.swift; sourceTree = "<group>"; };
+		93ACEA6E2333D87300056902 /* CarListTestInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListTestInteractor.swift; sourceTree = "<group>"; };
 		E7D6BC90656871F39027299F /* Pods-FreeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.debug.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +219,7 @@
 		932E8C1C23336F6900DDC791 = {
 			isa = PBXGroup;
 			children = (
+				933F61822334D72600B8F6BF /* readme.md */,
 				932E8C2723336F6900DDC791 /* FreeNow */,
 				932E8C3E23336F6B00DDC791 /* FreeNowTests */,
 				932E8C2623336F6900DDC791 /* Products */,
@@ -100,6 +240,12 @@
 		932E8C2723336F6900DDC791 /* FreeNow */ = {
 			isa = PBXGroup;
 			children = (
+				932E8C2823336F6900DDC791 /* AppDelegate.swift */,
+				933F61932335103F00B8F6BF /* ErrorModule */,
+				93ACE9EC2333744400056902 /* IntroductionModule */,
+				93ACEA2D2333819200056902 /* LocationList */,
+				93ACEA462333A4C000056902 /* CarListModule */,
+				93ACEA5D2333AECB00056902 /* MapViewModule */,
 				93ACE9CD2333715D00056902 /* SupportingFiles */,
 			);
 			path = FreeNow;
@@ -108,20 +254,46 @@
 		932E8C3E23336F6B00DDC791 /* FreeNowTests */ = {
 			isa = PBXGroup;
 			children = (
+				933F61802334BB5700B8F6BF /* AttributedStringTests.swift */,
+				93ACEA6E2333D87300056902 /* CarListTestInteractor.swift */,
 				932E8C3F23336F6B00DDC791 /* FreeNowTests.swift */,
 				932E8C4123336F6B00DDC791 /* Info.plist */,
 			);
 			path = FreeNowTests;
 			sourceTree = "<group>";
 		};
+		933F61932335103F00B8F6BF /* ErrorModule */ = {
+			isa = PBXGroup;
+			children = (
+				933F61962335105F00B8F6BF /* ErrorModuleViewController.swift */,
+				933F619A2335105F00B8F6BF /* ErrorModuleViewModel.swift */,
+				933F61982335105F00B8F6BF /* ErrorModuleModel.swift */,
+				933F61952335105F00B8F6BF /* ErrorModuleUseCase.swift */,
+				933F61992335105F00B8F6BF /* ErrorModuleInteractorApi.swift */,
+				933F61972335105F00B8F6BF /* ErrorModuleInteractor.swift */,
+				933F619B2335105F00B8F6BF /* ErrorModuleConfigurator.swift */,
+				933F61942335105F00B8F6BF /* ErrorModuleCoordinator.swift */,
+			);
+			path = ErrorModule;
+			sourceTree = "<group>";
+		};
 		93ACE9CD2333715D00056902 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				93ACE9D82333737A00056902 /* SharedModels */,
+				93ACE9DC2333737A00056902 /* SharedViews */,
 				93ACE9D12333728400056902 /* Foundation */,
+				93ACE9DE2333737A00056902 /* AppViewController.swift */,
+				93ACE9DF2333737A00056902 /* Async.swift */,
+				93ACE9E02333737A00056902 /* ColorTheme.swift */,
+				93ACE9DB2333737A00056902 /* NSObject+App.swift */,
+				93ACE9E12333737A00056902 /* ObservableType.swift */,
+				93ACE9DA2333737A00056902 /* UIAplication+Window.swift */,
+				93ACE9E22333737A00056902 /* ViewController.swift */,
 				93ACE9CE233371AD00056902 /* LaunchScreen.storyboard */,
-				932E8C2823336F6900DDC791 /* AppDelegate.swift */,
 				932E8C3623336F6A00DDC791 /* Info.plist */,
 				932E8C2E23336F6A00DDC791 /* Assets.xcassets */,
+				93ACEA2B233378BA00056902 /* FreeNow.strings */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -129,11 +301,144 @@
 		93ACE9D12333728400056902 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				93ACEA142333760700056902 /* NonEmpty */,
 				93ACE9D22333728400056902 /* Decodable+Utils.swift */,
-				93ACE9D32333728400056902 /* String+CarApp.swift */,
-				93ACE9D42333728400056902 /* Array+CarApp.swift */,
+				93ACE9D32333728400056902 /* String+App.swift */,
+				93ACE9D42333728400056902 /* Array+App.swift */,
+				933E5A302337A479005BB2B8 /* Errors.swift */,
+				933F617E2334BB4C00B8F6BF /* AttributedStringManager.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		93ACE9D82333737A00056902 /* SharedModels */ = {
+			isa = PBXGroup;
+			children = (
+				93ACE9D92333737A00056902 /* Position.swift */,
+			);
+			path = SharedModels;
+			sourceTree = "<group>";
+		};
+		93ACE9DC2333737A00056902 /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				93ACE9DD2333737A00056902 /* CircleView.swift */,
+			);
+			path = SharedViews;
+			sourceTree = "<group>";
+		};
+		93ACE9EC2333744400056902 /* IntroductionModule */ = {
+			isa = PBXGroup;
+			children = (
+				93ACE9ED2333744400056902 /* IntroductionModuleViewController.swift */,
+				93ACE9EF2333744400056902 /* IntroductionModuleViewModel.swift */,
+				93ACE9F02333744400056902 /* IntroductionModuleModel.swift */,
+				93ACE9F22333744400056902 /* IntroductionModuleUseCase.swift */,
+				93ACE9F42333744400056902 /* IntroductionModuleInteractor.swift */,
+				93ACE9F12333744400056902 /* IntroductionModuleInteractorApi.swift */,
+				93ACE9EE2333744400056902 /* IntroductionModuleConfigurator.swift */,
+				93ACE9F32333744400056902 /* IntroductionModuleCoordinator.swift */,
+			);
+			path = IntroductionModule;
+			sourceTree = "<group>";
+		};
+		93ACEA142333760700056902 /* NonEmpty */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA152333760700056902 /* NonEmpty+Dictionary.swift */,
+				93ACEA162333760700056902 /* NonEmpty+SetAlgebra.swift */,
+				93ACEA172333760700056902 /* NonEmpty+Random.swift */,
+				93ACEA182333760700056902 /* NonEmpty+MutableCollection.swift */,
+				93ACEA192333760700056902 /* NonEmpty+String.swift */,
+				93ACEA1A2333760700056902 /* NonEmpty+Comparable.swift */,
+				93ACEA1B2333760700056902 /* NonEmpty+Collection.swift */,
+				93ACEA1C2333760700056902 /* NonEmpty+Array.swift */,
+				93ACEA1D2333760700056902 /* NonEmpty.swift */,
+				93ACEA1E2333760700056902 /* NonEmpty+RangeReplaceableCollection.swift */,
+				93ACEA1F2333760700056902 /* NonEmpty+BidirectionalCollection.swift */,
+			);
+			path = NonEmpty;
+			sourceTree = "<group>";
+		};
+		93ACEA2D2333819200056902 /* LocationList */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA392333819200056902 /* ReusableViews */,
+				93ACEA332333819200056902 /* Models */,
+				93ACEA302333819200056902 /* LocationsListViewController.swift */,
+				93ACEA372333819200056902 /* LocationsListViewModel.swift */,
+				93ACEA382333819200056902 /* LocationsListModel.swift */,
+				93ACEA2F2333819200056902 /* LocationsListUseCase.swift */,
+				93ACEA312333819200056902 /* LocationsListInteractor.swift */,
+				93ACEA322333819200056902 /* LocationsListInteractorApi.swift */,
+				93ACEA2E2333819200056902 /* LocationsListConfigurator.swift */,
+				93ACEA362333819200056902 /* LocationsListCoordinator.swift */,
+			);
+			path = LocationList;
+			sourceTree = "<group>";
+		};
+		93ACEA332333819200056902 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA342333819200056902 /* LocationCarModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93ACEA392333819200056902 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA3A2333819200056902 /* LocationTableViewCell.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		93ACEA462333A4C000056902 /* CarListModule */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA512333A4C000056902 /* ResubleViews */,
+				93ACEA4B2333A4C000056902 /* Models */,
+				93ACEA492333A4C000056902 /* CarListViewController.swift */,
+				93ACEA482333A4C000056902 /* CarListViewModel.swift */,
+				93ACEA4E2333A4C000056902 /* CarListModel.swift */,
+				93ACEA502333A4C000056902 /* CarListUseCase.swift */,
+				93ACEA472333A4C000056902 /* CarListInteractor.swift */,
+				93ACEA4D2333A4C000056902 /* CarListInteractorApi.swift */,
+				93ACEA4F2333A4C000056902 /* CarListConfigurator.swift */,
+				93ACEA4A2333A4C000056902 /* CarListCoordinator.swift */,
+			);
+			path = CarListModule;
+			sourceTree = "<group>";
+		};
+		93ACEA4B2333A4C000056902 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA4C2333A4C000056902 /* CarModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93ACEA512333A4C000056902 /* ResubleViews */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA522333A4C000056902 /* CarTableViewCell.swift */,
+			);
+			path = ResubleViews;
+			sourceTree = "<group>";
+		};
+		93ACEA5D2333AECB00056902 /* MapViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				93ACEA5E2333AECB00056902 /* MapViewViewController.swift */,
+				93ACEA5F2333AECB00056902 /* MapViewViewModel.swift */,
+				93ACEA642333AECB00056902 /* MapViewModel.swift */,
+				93ACEA622333AECB00056902 /* MapViewUseCase.swift */,
+				93ACEA612333AECB00056902 /* MapViewInteractor.swift */,
+				93ACEA602333AECB00056902 /* MapViewInteractorApi.swift */,
+				93ACEA652333AECB00056902 /* MapViewConfigurator.swift */,
+				93ACEA632333AECB00056902 /* MapViewCoordinator.swift */,
+			);
+			path = MapViewModule;
 			sourceTree = "<group>";
 		};
 		ACE6055E086F9CD08AAB1F3F /* Pods */ = {
@@ -231,6 +536,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93ACEA2C233378BA00056902 /* FreeNow.strings in Resources */,
 				932E8C2F23336F6A00DDC791 /* Assets.xcassets in Resources */,
 				93ACE9D0233371AD00056902 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -314,9 +620,75 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93ACEA662333AECB00056902 /* MapViewViewController.swift in Sources */,
+				933F61A22335105F00B8F6BF /* ErrorModuleViewModel.swift in Sources */,
+				933F617F2334BB4C00B8F6BF /* AttributedStringManager.swift in Sources */,
+				93ACEA252333760800056902 /* NonEmpty+Comparable.swift in Sources */,
+				933F619C2335105F00B8F6BF /* ErrorModuleCoordinator.swift in Sources */,
+				93ACE9F72333744400056902 /* IntroductionModuleViewModel.swift in Sources */,
+				933E5A312337A479005BB2B8 /* Errors.swift in Sources */,
+				93ACEA202333760800056902 /* NonEmpty+Dictionary.swift in Sources */,
+				93ACE9E62333737B00056902 /* CircleView.swift in Sources */,
+				933F61A12335105F00B8F6BF /* ErrorModuleInteractorApi.swift in Sources */,
+				93ACE9FB2333744400056902 /* IntroductionModuleCoordinator.swift in Sources */,
+				93ACEA422333819200056902 /* LocationsListCoordinator.swift in Sources */,
+				93ACEA432333819200056902 /* LocationsListViewModel.swift in Sources */,
 				932E8C2923336F6900DDC791 /* AppDelegate.swift in Sources */,
-				93ACE9D62333728400056902 /* String+CarApp.swift in Sources */,
-				93ACE9D72333728400056902 /* Array+CarApp.swift in Sources */,
+				93ACE9F52333744400056902 /* IntroductionModuleViewController.swift in Sources */,
+				93ACEA402333819200056902 /* LocationCarModel.swift in Sources */,
+				93ACEA6C2333AECB00056902 /* MapViewModel.swift in Sources */,
+				93ACEA5B2333A4C100056902 /* CarListUseCase.swift in Sources */,
+				93ACE9F62333744400056902 /* IntroductionModuleConfigurator.swift in Sources */,
+				93ACEA6A2333AECB00056902 /* MapViewUseCase.swift in Sources */,
+				93ACEA3B2333819200056902 /* LocationsListConfigurator.swift in Sources */,
+				93ACE9E42333737B00056902 /* UIAplication+Window.swift in Sources */,
+				933F619D2335105F00B8F6BF /* ErrorModuleUseCase.swift in Sources */,
+				93ACE9D62333728400056902 /* String+App.swift in Sources */,
+				93ACEA532333A4C100056902 /* CarListInteractor.swift in Sources */,
+				93ACE9E52333737B00056902 /* NSObject+App.swift in Sources */,
+				93ACEA682333AECB00056902 /* MapViewInteractorApi.swift in Sources */,
+				93ACEA5A2333A4C100056902 /* CarListConfigurator.swift in Sources */,
+				93ACEA5C2333A4C100056902 /* CarTableViewCell.swift in Sources */,
+				93ACEA2A2333760800056902 /* NonEmpty+BidirectionalCollection.swift in Sources */,
+				933F61A32335105F00B8F6BF /* ErrorModuleConfigurator.swift in Sources */,
+				93ACE9D72333728400056902 /* Array+App.swift in Sources */,
+				93ACEA442333819200056902 /* LocationsListModel.swift in Sources */,
+				93ACEA592333A4C100056902 /* CarListModel.swift in Sources */,
+				93ACEA6B2333AECB00056902 /* MapViewCoordinator.swift in Sources */,
+				93ACEA3D2333819200056902 /* LocationsListViewController.swift in Sources */,
+				93ACE9EA2333737B00056902 /* ObservableType.swift in Sources */,
+				93ACEA282333760800056902 /* NonEmpty.swift in Sources */,
+				93ACEA262333760800056902 /* NonEmpty+Collection.swift in Sources */,
+				93ACE9E72333737B00056902 /* AppViewController.swift in Sources */,
+				93ACEA692333AECB00056902 /* MapViewInteractor.swift in Sources */,
+				93ACEA3E2333819200056902 /* LocationsListInteractor.swift in Sources */,
+				93ACE9FA2333744400056902 /* IntroductionModuleUseCase.swift in Sources */,
+				93ACEA242333760800056902 /* NonEmpty+String.swift in Sources */,
+				93ACEA222333760800056902 /* NonEmpty+Random.swift in Sources */,
+				933F619E2335105F00B8F6BF /* ErrorModuleViewController.swift in Sources */,
+				93ACEA562333A4C100056902 /* CarListCoordinator.swift in Sources */,
+				93ACEA672333AECB00056902 /* MapViewViewModel.swift in Sources */,
+				93ACEA3F2333819200056902 /* LocationsListInteractorApi.swift in Sources */,
+				93ACE9EB2333737B00056902 /* ViewController.swift in Sources */,
+				93ACEA572333A4C100056902 /* CarModel.swift in Sources */,
+				93ACEA292333760800056902 /* NonEmpty+RangeReplaceableCollection.swift in Sources */,
+				93ACEA212333760800056902 /* NonEmpty+SetAlgebra.swift in Sources */,
+				93ACEA232333760800056902 /* NonEmpty+MutableCollection.swift in Sources */,
+				93ACE9E32333737B00056902 /* Position.swift in Sources */,
+				93ACEA542333A4C100056902 /* CarListViewModel.swift in Sources */,
+				933F61A02335105F00B8F6BF /* ErrorModuleModel.swift in Sources */,
+				93ACE9FC2333744400056902 /* IntroductionModuleInteractor.swift in Sources */,
+				933F619F2335105F00B8F6BF /* ErrorModuleInteractor.swift in Sources */,
+				93ACEA582333A4C100056902 /* CarListInteractorApi.swift in Sources */,
+				93ACE9E82333737B00056902 /* Async.swift in Sources */,
+				93ACEA3C2333819200056902 /* LocationsListUseCase.swift in Sources */,
+				93ACEA272333760800056902 /* NonEmpty+Array.swift in Sources */,
+				93ACE9F82333744400056902 /* IntroductionModuleModel.swift in Sources */,
+				93ACEA452333819200056902 /* LocationTableViewCell.swift in Sources */,
+				93ACE9F92333744400056902 /* IntroductionModuleInteractorApi.swift in Sources */,
+				93ACEA552333A4C100056902 /* CarListViewController.swift in Sources */,
+				93ACEA6D2333AECB00056902 /* MapViewConfigurator.swift in Sources */,
+				93ACE9E92333737B00056902 /* ColorTheme.swift in Sources */,
 				93ACE9D52333728400056902 /* Decodable+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +698,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				932E8C4023336F6B00DDC791 /* FreeNowTests.swift in Sources */,
+				933F61812334BB5700B8F6BF /* AttributedStringTests.swift in Sources */,
+				93ACEA6F2333D87300056902 /* CarListTestInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

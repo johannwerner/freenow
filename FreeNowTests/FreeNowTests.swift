@@ -10,25 +10,44 @@ import XCTest
 @testable import FreeNow
 
 class FreeNowTests: XCTestCase {
-
+    
+    // MARK: - Properties
+    var useCase: LocationsListUseCase!
+    
+    // MARK: - Life Cycle
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        let interactor = LocationListTestInteractor()
+        let useCase = LocationsListUseCase(interactor: interactor)
+        self.useCase = useCase
     }
-
+    
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+        useCase = nil
     }
+}
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+extension FreeNowTests {
+    func test_parsingOfCars_latitude() {
+        //Given
+        let position = Position(latitude: 0, longitude: 0)
+        let nonEmptyArray = [position, position].convertToNonEmptyArray()!
+        let locationModel = LocationModel(name: "", bounds: nonEmptyArray)
+        let result = self.useCase.getCarListForLocation(locationModel: locationModel)
+            .subscribe(onNext: { status in
+                switch status {
+                case .loading:
+                    break
+                case .error:
+                    XCTAssert(false)
+                case .success(let locationCarModel):
+                    //When
+                    let carModel = locationCarModel.poiList.first!
+                    //Then
+                    XCTAssertEqual(carModel.coordinate.latitude, 53)
+                }
+            })
+        print(result)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
